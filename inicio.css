@@ -1,16 +1,17 @@
+/* Reset geral */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; /* <--- IMPORTANTE! impede scroll */
   font-family: 'Poppins', sans-serif;
   background-color: #000000;
   color: white;
   display: flex;
   flex-direction: column;
-  position: relative;
+  overflow-x: hidden;
 }
 
+/* Fundo com gradiente fixo */
 body::before {
   content: '';
   position: fixed;
@@ -19,43 +20,10 @@ body::before {
   width: 100%;
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  z-index: -2;
-}
-
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
   z-index: -1;
 }
 
-.stars::before,
-.stars::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="white"/></svg>') repeat;
-  background-size: 100px 100px;
-  opacity: 0.3;
-  animation: twinkle 20s linear infinite;
-}
-
-.stars::after {
-  background-size: 50px 50px;
-  opacity: 0.5;
-  animation: twinkle 30s linear infinite reverse;
-}
-
-@keyframes twinkle {
-  0% { transform: translate(0, 0); opacity: 0.3; }
-  50% { opacity: 0.6; }
-  100% { transform: translate(10px, 10px); opacity: 0.3; }
-}
-
+/* HEADER */
 header {
   background-color: #1f1f1f;
   padding: 20px 0;
@@ -67,6 +35,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header ul {
@@ -74,6 +43,7 @@ header ul {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -88,11 +58,11 @@ header a {
   font-size: 18px;
 }
 
-/* Marca a seção ativa na navbar */
 header a.active {
   border-bottom: 2px solid #00ff99;
 }
 
+/* HERO */
 .hero {
   flex: 1;
   display: flex;
@@ -100,12 +70,13 @@ header a.active {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   background: url('./imagens/capa inicio 3.jpg') no-repeat center center/cover;
   position: relative;
   z-index: 1;
 }
 
+/* TÍTULOS ANIMADOS */
 .animated-title h1 {
   margin: 0;
   font-size: 48px;
@@ -133,11 +104,13 @@ header a.active {
   51%, 100% { opacity: 0; }
 }
 
+/* REDES SOCIAIS */
 .social-links {
-  margin-top: 30px; /* espaço agradável, não muito colado */
+  margin-top: 30px;
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-icon {
@@ -150,4 +123,66 @@ header a.active {
   transform: scale(1.2);
 }
 
+/* RESPONSIVIDADE */
+/* Tablets até 1024px */
+@media (max-width: 1024px) {
+  .animated-title h1 {
+    font-size: 40px;
+  }
 
+  .animated-title h2 {
+    font-size: 26px;
+  }
+
+  header a {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+}
+
+/* Celulares grandes até 768px */
+@media (max-width: 768px) {
+  .animated-title h1 {
+    font-size: 34px;
+  }
+
+  .animated-title h2 {
+    font-size: 22px;
+  }
+
+  header li {
+    margin: 0 10px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Celulares pequenos até 480px */
+@media (max-width: 480px) {
+  .animated-title h1 {
+    font-size: 28px;
+  }
+
+  .animated-title h2 {
+    font-size: 18px;
+  }
+
+  header a {
+    font-size: 14px;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero {
+    padding: 20px 10px;
+  }
+}

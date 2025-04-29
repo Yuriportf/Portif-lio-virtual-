@@ -25,45 +25,84 @@
   </div>
 </header>
 
-
 <main class="main-content">
   <section class="skills-section">
 
+    <!-- Linguagens de Programação e Ferramentas -->
     <h1 class="section-title">🛠️ Linguagens de Programação e Ferramentas</h1>
     <div class="carousel-wrapper">
       <button class="carousel-button left" onclick="scrollCarousel('left', 'carousel1')">❮</button>
       <div id="carousel1" class="carousel">
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><p>Python</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1) grayscale(100%) brightness(100%);"><p>Flask</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><p>Git</p></div>
+        <div class="skill-card" onclick="openModal('modalPython')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalHTML')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          <p>HTML5</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalJS')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalJava')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <p>Java</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalMySQL')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+          <p>MySQL</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalFlask')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1) grayscale(100%) brightness(100%);">
+          <p>Flask</p>
+        </div>
       </div>
       <button class="carousel-button right" onclick="scrollCarousel('right', 'carousel1')">❯</button>
     </div>
 
+    <!-- IDE's e Editores -->
     <h1 class="section-title">💻 IDE's e Editores</h1>
     <div class="carousel-wrapper">
       <button class="carousel-button left" onclick="scrollCarousel('left', 'carousel2')">❮</button>
       <div id="carousel2" class="carousel">
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><p>VS Code</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm"><p>PyCharm</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ"><p>IntelliJ</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse"><p>Eclipse</p></div>
+        <div class="skill-card" onclick="openModal('modalVSCode')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+          <p>VS Code</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalPycharm')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm">
+          <p>PyCharm</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalIntelliJ')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ">
+          <p>IntelliJ</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalEclipse')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse">
+          <p>Eclipse</p>
+        </div>
       </div>
       <button class="carousel-button right" onclick="scrollCarousel('right', 'carousel2')">❯</button>
     </div>
 
+    <!-- Ferramentas de Design -->
     <h1 class="section-title">🎨 Ferramentas de Design</h1>
     <div class="carousel-wrapper">
       <button class="carousel-button left" onclick="scrollCarousel('left', 'carousel3')">❮</button>
       <div id="carousel3" class="carousel">
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" style="filter: invert(1) grayscale(100%) brightness(100%);"><p>Photoshop</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><p>Figma</p></div>
-        <div class="skill-card"><img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="Canva"><p>Canva</p></div>
+        <div class="skill-card" onclick="openModal('modalPhotoshop')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" style="filter: invert(1) grayscale(100%) brightness(100%);">
+          <p>Photoshop</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalFigma')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+          <p>Figma</p>
+        </div>
+        <div class="skill-card" onclick="openModal('modalCanva')">
+          <img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="Canva">
+          <p>Canva</p>
+        </div>
       </div>
       <button class="carousel-button right" onclick="scrollCarousel('right', 'carousel3')">❯</button>
     </div>
@@ -71,65 +110,138 @@
   </section>
 </main>
 
+<!-- Modais -->
+<div id="modalPython" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalPython')">&times;</span>
+    <h3>Python</h3>
+    <p>Aprendi Python no semestre 2024.2 no IFPE Campus Paulista durante a disciplina de programação.</p>
+  </div>
+</div>
+
+<div id="modalHTML" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalHTML')">&times;</span>
+    <h3>HTML5</h3>
+    <p>Aprendi HTML e CSS de forma autodidata com as aulas do professor Gustavo Guanabara no YouTube.</p>
+  </div>
+</div>
+
+<div id="modalJS" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalJS')">&times;</span>
+    <h3>JavaScript</h3>
+    <p>Estudei JavaScript junto com HTML e CSS, também por conta própria através do curso do Gustavo Guanabara.</p>
+  </div>
+</div>
+
+<div id="modalJava" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalJava')">&times;</span>
+    <h3>Java</h3>
+    <p>Ainda estou aprendendo Java por meio de um curso no CDD, como complemento da minha formação técnica.</p>
+  </div>
+</div>
+
+<div id="modalMySQL" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalMySQL')">&times;</span>
+    <h3>MySQL</h3>
+    <p>Aprendi MySQL no semestre 2024.2 no IFPE Campus Paulista, onde trabalhei com banco de dados relacionais.</p>
+  </div>
+</div>
+
+<div id="modalFlask" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalFlask')">&times;</span>
+    <h3>Flask</h3>
+    <p>Utilizei Flask no projeto final da disciplina de programação do semestre no IFPE, o que me deu base prática.</p>
+  </div>
+</div>
+
+<div id="modalVSCode" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalVSCode')">&times;</span>
+    <h3>VS Code</h3>
+    <p>Aprendi a programar no VS Code, sendo minha IDE principal desde o início da minha jornada em programação.</p>
+  </div>
+</div>
+
+<div id="modalPycharm" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalPycharm')">&times;</span>
+    <h3>PyCharm</h3>
+    <p>No CDD, percebi que o mercado usa outras IDEs, então decidi aprender o PyCharm como alternativa para Python.</p>
+  </div>
+</div>
+
+<div id="modalIntelliJ" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalIntelliJ')">&times;</span>
+    <h3>IntelliJ</h3>
+    <p>Aprendi a usar o IntelliJ durante o estudo de Java no CDD, pois é muito utilizado no desenvolvimento Java profissional.</p>
+  </div>
+</div>
+
+<div id="modalEclipse" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalEclipse')">&times;</span>
+    <h3>Eclipse</h3>
+    <p>Aprendi a usar o Eclipse, principalmente para trabalhar com projetos Java e plugins associados.</p>
+  </div>
+</div>
+
+<div id="modalPhotoshop" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalPhotoshop')">&times;</span>
+    <h3>Photoshop</h3>
+    <p>Aprendi Photoshop para edição de coisas simples, como fontes para colocar em projetos de programação e prototipagem de sistemas.</p>
+  </div>
+</div>
+
+<div id="modalFigma" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalFigma')">&times;</span>
+    <h3>Figma</h3>
+    <p>Aprendi Figma no período 2024.1 na cadeira de empreendedorismo, focado em prototipagem e design de interfaces.</p>
+  </div>
+</div>
+
+<div id="modalCanva" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalCanva')">&times;</span>
+    <h3>Canva</h3>
+    <p>Aprendi Canva de forma autodidata e uso muito para fazer apresentações em PPT e edições de imagens em geral.</p>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  function scrollCarousel(direction, id) {
+    const carousel = document.getElementById(id);
+    const scrollAmount = 200;
+    carousel.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  document.getElementById("mobile-menu").addEventListener("click", function () {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+  });
+</script>
+
 <footer>
-  <p>© 2025 Yuri Oliveira</p>
+  <p>© 2025 Yuri</p>
 </footer>
 
-<!-- JavaScript das setas -->
-<script>
-// Faz o carrossel rolar ao clicar nas setas
-function scrollCarousel(direction, carouselId) {
-  const carousel = document.getElementById(carouselId);
-  const scrollAmount = 300;
-
-  if (direction === 'left') {
-    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  } else {
-    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  }
-}
-
-// Verifica se precisa mostrar ou esconder as setas
-function checkCarouselButtons() {
-  const wrappers = document.querySelectorAll('.carousel-wrapper');
-
-  wrappers.forEach(wrapper => {
-    const carousel = wrapper.querySelector('.carousel');
-    const btnLeft = wrapper.querySelector('.carousel-button.left');
-    const btnRight = wrapper.querySelector('.carousel-button.right');
-
-    if (carousel.scrollWidth > carousel.clientWidth) {
-      btnLeft.classList.remove('hidden');
-      btnRight.classList.remove('hidden');
-    } else {
-      btnLeft.classList.add('hidden');
-      btnRight.classList.add('hidden');
-    }
-  });
-}
-
-// Atualizar sempre que carregar ou redimensionar
-window.addEventListener('load', checkCarouselButtons);
-window.addEventListener('resize', checkCarouselButtons);
-</script>
-<script>
-  const menuToggle = document.getElementById('mobile-menu');
-  const navbar = document.getElementById('navbar');
-
-  menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-  });
-</script>
-<script>
-  // Adiciona a classe 'scrolled' quando o usuário rolar a página
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if (window.scrollY > 50) {  // Quando rolar 50px ou mais
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-    </script>
 </body>
 </html>

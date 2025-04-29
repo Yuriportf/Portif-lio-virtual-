@@ -6,7 +6,6 @@
   <title>Meu Portfólio</title>
   <link rel="stylesheet" href="inicio.css">
   <link rel="stylesheet" href="padrao.css">
-
 </head>
 <body>
 
@@ -25,73 +24,60 @@
       </nav>
     </div>
   </header>
-  
 
-<section class="hero">
-  <div class="animated-title">
-    <h1>Yuri Santos de Oliveira</h1>
-    <h2>Eu sou <span id="changing-word">Desenvolvedor</span></h2>
-  </div>
+  <section class="hero">
+    <div class="animated-title">
+      <h1>Yuri Santos de Oliveira</h1>
+      <h2>Eu sou <span id="changing-word">Desenvolvedor</span></h2>
+    </div>
+  </section>
 
-  <!-- Redes sociais -->
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/yuri-oliveira-aqui/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="social-icon">
-    </a>
-    <a href="https://github.com/Yuriportf" target="_blank">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" alt="GitHub" class="social-icon" style="filter: invert(1);">
-    </a>
-    
-    <a href="mailto:ysoli7777@gmail.com" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" class="social-icon">
-    </a>
-  </div>
-</section>
+  <footer>
+    <p>© 2025 Yuri</p>
+  </footer>
 
-<footer>
-  <p>© 2025 Yuri</p>
-</footer>
+  <script>
+    const words = ["Desenvolvedor", "Estudante", "Inovador", "Criativo", "Diferente", "Curioso"];
+    let currentWordIndex = 0;
+    let letterIndex = 0;
+    let isDeleting = false;
+    const changingWordElement = document.getElementById("changing-word");
 
-<script>
-  const words = ["Desenvolvedor","Estudante", "Inovador", "Criativo", "Diferente", "Curioso"];
-  let currentWordIndex = 0;
-  let letterIndex = 0;
-  let isDeleting = false;
-  const changingWordElement = document.getElementById("changing-word");
+    function typeEffect() {
+      const currentWord = words[currentWordIndex];
 
-  function typeEffect() {
-    const currentWord = words[currentWordIndex];
+      if (isDeleting) {
+        letterIndex--;
+      } else {
+        letterIndex++;
+      }
 
-    if (isDeleting) {
-      letterIndex--;
-    } else {
-      letterIndex++;
+      changingWordElement.innerHTML = currentWord.substring(0, letterIndex) + '<span class="cursor">|</span>';
+
+      if (!isDeleting && letterIndex === currentWord.length) {
+        setTimeout(() => isDeleting = true, 1000);
+      } else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        currentWordIndex = (currentWordIndex + 1) % words.length;
+      }
+
+      setTimeout(typeEffect, isDeleting ? 80 : 150);
     }
 
-    changingWordElement.innerHTML = currentWord.substring(0, letterIndex) + '<span class="cursor">|</span>';
+    typeEffect();
+  </script>
 
-    if (!isDeleting && letterIndex === currentWord.length) {
-      setTimeout(() => isDeleting = true, 1000);
-    } else if (isDeleting && letterIndex === 0) {
-      isDeleting = false;
-      currentWordIndex = (currentWordIndex + 1) % words.length;
-    }
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
 
-    setTimeout(typeEffect, isDeleting ? 80 : 150);
-  }
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+  </script>
 
-  typeEffect();
-</script>
-<script>
-  const menuToggle = document.getElementById('mobile-menu');
-  const navbar = document.getElementById('navbar');
-
-  menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-  });
-</script>
-<script>
-  // Adiciona a classe 'scrolled' quando o usuário rolar a página
+  <script>
+    // Adiciona a classe 'scrolled' quando o usuário rolar a página
     window.addEventListener('scroll', function() {
       const header = document.querySelector('header');
       if (window.scrollY > 50) {  // Quando rolar 50px ou mais
@@ -100,6 +86,6 @@
         header.classList.remove('scrolled');
       }
     });
-    </script>
+  </script>
 </body>
 </html>
