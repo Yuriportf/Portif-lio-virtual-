@@ -3,106 +3,184 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Estilo do corpo com imagem de fundo */
-html, body {
+  }
+  
+  html, body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     color: white;
     display: flex;
     flex-direction: column;
     background: url('./imagens/capa inicio 3.jpg') no-repeat center center/cover;
-    background-attachment: fixed; /* Fixa o fundo ao rolar */
+    background-attachment: fixed;
     background-size: cover;
-    background-color: #121212; /* Cor de fundo caso a imagem falhe */
-}
-
-/* Navbar (header) */
-header {
+    background-color: #121212;
+    scroll-behavior: smooth;
+  }
+  
+  header {
     background-color: #1f1f1f;
-    padding: 30px 0; /* Aumentado */
-    text-align: center;
-    z-index: 1;
-}
-
-.header-container {
+    padding: 20px 0;
+    z-index: 10;
+    position: sticky;  /* Fixa o header no topo */
+    top: 0;  /* Fixa no topo da tela */
+    width: 100%;
+    transition: padding 0.3s ease, background-color 0.3s ease;
+  }
+  
+  header.scrolled {
+    background-color: #121212;  /* Torna o cabeçalho mais escuro ao rolar */
+    padding: 10px 0;  /* Diminui o tamanho do cabeçalho ao rolar */
+  }
+  
+  .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-nav ul {
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #00ff99;
+    cursor: pointer;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .menu-toggle:hover {
+    transform: scale(1.2);
+  }
+  
+  nav {
+    position: relative;
+    width: 100%;
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
-}
-
-nav li {
-    margin: 0 25px; /* Mais espaçamento */
-}
-
-nav a {
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  nav li {
+    margin: 0 25px;
+  }
+  
+  nav a {
     text-decoration: none;
     color: #00ff99;
     font-weight: bold;
-    font-size: 20px; /* Fonte maior */
-    transition: border-bottom 0.3s;
-}
-
-nav a:hover,
-nav a.active {
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #ffffff;
     border-bottom: 2px solid #00ff99;
-}
-
-/* Footer (rodapé) */
-footer {
+  }
+  
+  footer {
     background-color: #1f1f1f;
     text-align: center;
-    padding: 25px 0; /* Aumentado */
-    font-size: 16px; /* Fonte um pouco maior */
+    padding: 25px 0;
+    font-size: 16px;
     margin-top: auto;
-}
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
+  }
+  
+  /* Seções principais */
+  section {
+    padding: 100px 20px 40px;
+    background: url('./imagens/capa inicio 3.jpg') no-repeat center center/cover;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ff99;
+    text-align: center;
+  }
+  
+  #sobre-mim img {
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      position: fixed;
+      top: 25px;
+      right: 30px;
+      z-index: 1001;
+    }
+  
     nav ul {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #1f1f1f;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 80vw;
+      height: 100vh;
+      padding: 30px 20px;
+      z-index: 1000;
+      border-left: 2px solid #00ff99;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.7);
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      display: flex;
     }
-
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+  
     nav li {
-        margin: 15px 0;
+      margin: 20px 0;
+      width: 100%;
     }
-
+  
     nav a {
-        font-size: 18px;
+      font-size: 20px;
+      width: 100%;
+      padding: 10px 0;
     }
-
+  
     header {
-        padding: 20px 10px;
+      padding: 20px;
     }
-
-    .header-container {
-        flex-direction: column;
-    }
-
+  
     footer {
-        padding: 20px 10px;
-        font-size: 14px;
+      padding: 20px 10px;
+      font-size: 14px;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     nav a {
-        font-size: 16px;
+      font-size: 18px;
     }
-
+  
     nav li {
-        margin: 10px 0;
+      margin: 15px 0;
     }
-
+  
     footer {
-        font-size: 13px;
+      font-size: 13px;
     }
-}
+  }
+  

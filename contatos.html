@@ -11,19 +11,22 @@
 </head>
 <body>
 
-<header>
+  <header>
+    <div class="header-container">
+      <nav>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul id="navbar">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.htm">Sobre mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="habilidades.html">Habilidades</a></li>
+          <li><a href="https://drive.google.com/file/...">Currículo</a></li>
+          <li><a href="contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   
-  <nav>
-    <ul>
-      <li><a href="início.html">Início</a></li>
-      <li><a href="sobre.htm">Sobre mim </a></li>
-      <li><a href="formacao.html">Formação</a></li>
-      <li><a href="habilidades.html">habilidades</a></li>
-      <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
-      <li><a href="contatos.html">Contato</a></li>
-    </ul>
-  </nav>
-</header>
 
 <main>
   <section id="contatos" style="padding: 20px;">
@@ -87,7 +90,25 @@
   </section>
 </main>
 
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navbar = document.getElementById('navbar');
 
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+<script>
+  // Adiciona a classe 'scrolled' quando o usuário rolar a página
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {  // Quando rolar 50px ou mais
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    </script>
 <footer>
   <p>© 2025 Yuri Oliveira</p>
 </footer>

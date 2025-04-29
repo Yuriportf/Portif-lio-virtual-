@@ -33,7 +33,7 @@ main {
 
 .sobre-img img {
   width: 300px;
-  height:300px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -116,4 +116,57 @@ footer {
   padding: 10px 0;
   font-size: 12px;
   flex-shrink: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;  /* Alinha os itens verticalmente */
+    gap: 20px;
+  }
+
+  .sobre-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .sobre-texto {
+    max-width: 100%;
+  }
+
+  .sobre-texto h2 {
+    font-size: 24px;
+  }
+
+  .sobre-texto p {
+    font-size: 14px;
+  }
+
+  .info-lista {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-lista li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .sobre-texto h2 {
+    font-size: 22px;
+  }
+
+  .sobre-texto p {
+    font-size: 13px;
+  }
+
+  .info-lista li {
+    font-size: 10px;
+  }
 }

@@ -111,3 +111,49 @@
 .gmail {
   color: #EA4335;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Ajusta para uma coluna em telas menores */
+  .contatos-lista {
+    grid-template-columns: 1fr; /* 1 coluna para telas menores */
+    max-width: 100%;
+  }
+
+  /* Ajusta o tamanho da fonte do título */
+  #contatos h2 {
+    font-size: 28px;
+  }
+
+  /* Ajuste dos itens da lista */
+  .contatos-lista li {
+    height: 100px; /* Aumenta a altura para melhorar o uso do espaço */
+  }
+
+  /* Ajuste do tamanho da fonte dos itens */
+  .contatos-lista a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Reduz o tamanho do título em telas muito pequenas */
+  #contatos h2 {
+    font-size: 24px;
+  }
+
+  /* Aumenta o espaçamento entre os ícones */
+  .contatos-lista i {
+    font-size: 25px;
+  }
+
+  /* Ajuste ainda maior no tamanho da fonte dos itens */
+  .contatos-lista a {
+    font-size: 14px;
+  }
+
+  /* Ajuste dos itens da lista */
+  .contatos-lista li {
+    height: 120px; /* Mais altura para garantir o espaçamento */
+  }
+}
