@@ -29,13 +29,15 @@ header {
   padding: 20px 0;
   text-align: center;
   z-index: 1;
+  position: relative;
 }
 
 .header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 header ul {
@@ -122,3 +124,47 @@ header a.active {
   transform: scale(1.2);
 }
 
+/* BOTÃO HAMBÚRGUER */
+.menu-toggle {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  color: #00ff99;
+  text-align: right;
+}
+
+/* MENU RESPONSIVO */
+#navbar {
+  display: none;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  border-top: 1px solid #333;
+}
+
+/* Quando ativado via JS */
+#navbar.show {
+  display: flex;
+}
+
+/* EM TELAS GRANDES (DESKTOP) */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  #navbar {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    border-top: none;
+  }
+}
