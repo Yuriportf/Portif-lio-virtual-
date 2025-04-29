@@ -1,0 +1,119 @@
+/* Fundo Padrão para todas as telas */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  overflow: hidden; /* Impede rolagem */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Caixa de fundo apenas no conteúdo */
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+  border-radius: 15px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* SOBRE */
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sobre-img img {
+  width: 300px;
+  height:300px;
+  border-radius: 10px;
+}
+
+.sobre-texto {
+  max-width: 500px;
+}
+
+.sobre-texto h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #00ff99;
+}
+
+.sobre-texto p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.info-lista {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.info-lista ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-lista li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.info-lista span {
+  font-weight: bold;
+  color: #00ff99;
+}
+
+/* INTERESSES */
+#interesses {
+  padding: 10px;
+  text-align: center;
+}
+
+#interesses h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #00ff99;
+}
+
+.interesses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: #1f1f1f;
+  padding: 15px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+  background-color: #00ff99;
+  color: #121212;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  flex-shrink: 0;
+}

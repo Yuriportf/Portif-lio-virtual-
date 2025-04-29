@@ -1,0 +1,66 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo com imagem de fundo */
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: url('./imagens/capa inicio 3.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Fixa o fundo ao rolar */
+    background-size: cover;
+    background-color: #121212; /* Cor de fundo caso a imagem falhe */
+}
+
+/* Navbar (header) */
+header {
+    background-color: #1f1f1f;
+    padding: 30px 0; /* Aumentado */
+    text-align: center;
+    z-index: 1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 25px; /* Mais espaçamento */
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    font-size: 20px; /* Fonte maior */
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom: 2px solid #00ff99;
+}
+
+/* Footer (rodapé) */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 25px 0; /* Aumentado */
+    font-size: 16px; /* Fonte um pouco maior */
+    margin-top: auto;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="padrao.css">
+
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <nav>
+      <ul>
+        <li><a href="início.html">Início</a></li>
+        <li><a href="sobre.htm">Sobre mim </a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="habilidades.html">habilidades</a></li>
+        <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
+        <li><a href="contatos.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="animated-title">
+    <h1>Yuri Santos de Oliveira</h1>
+    <h2>Eu sou <span id="changing-word">Desenvolvedor</span></h2>
+  </div>
+
+  <!-- Redes sociais -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/yuri-oliveira-aqui/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="social-icon">
+    </a>
+    <a href="https://github.com/Yuriportf" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" alt="GitHub" class="social-icon" style="filter: invert(1);">
+    </a>
+    
+    <a href="mailto:ysoli7777@gmail.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" class="social-icon">
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Yuri</p>
+</footer>
+
+<script>
+  const words = ["Desenvolvedor","Estudante", "Inovador", "Criativo", "Diferente", "Curioso"];
+  let currentWordIndex = 0;
+  let letterIndex = 0;
+  let isDeleting = false;
+  const changingWordElement = document.getElementById("changing-word");
+
+  function typeEffect() {
+    const currentWord = words[currentWordIndex];
+
+    if (isDeleting) {
+      letterIndex--;
+    } else {
+      letterIndex++;
+    }
+
+    changingWordElement.innerHTML = currentWord.substring(0, letterIndex) + '<span class="cursor">|</span>';
+
+    if (!isDeleting && letterIndex === currentWord.length) {
+      setTimeout(() => isDeleting = true, 1000);
+    } else if (isDeleting && letterIndex === 0) {
+      isDeleting = false;
+      currentWordIndex = (currentWordIndex + 1) % words.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 80 : 150);
+  }
+
+  typeEffect();
+</script>
+
+</body>
+</html>

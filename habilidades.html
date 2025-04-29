@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habilidades</title>
+  <link rel="stylesheet" href="habilidades.css">
+  <link rel="stylesheet" href="padrao.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <nav>
+      <ul>
+        <li><a href="início.html">Início</a></li>
+        <li><a href="sobre.htm">Sobre mim </a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="habilidades.html">habilidades</a></li>
+        <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
+        <li><a href="contatos.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main-content">
+  <section class="skills-section">
+
+    <h1 class="section-title">🛠️ Linguagens de Programação e Ferramentas</h1>
+    <div class="carousel-wrapper">
+      <button class="carousel-button left" onclick="scrollCarousel('left', 'carousel1')">❮</button>
+      <div id="carousel1" class="carousel">
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><p>Python</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1) grayscale(100%) brightness(100%);"><p>Flask</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><p>Git</p></div>
+      </div>
+      <button class="carousel-button right" onclick="scrollCarousel('right', 'carousel1')">❯</button>
+    </div>
+
+    <h1 class="section-title">💻 IDE's e Editores</h1>
+    <div class="carousel-wrapper">
+      <button class="carousel-button left" onclick="scrollCarousel('left', 'carousel2')">❮</button>
+      <div id="carousel2" class="carousel">
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><p>VS Code</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm"><p>PyCharm</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ"><p>IntelliJ</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse"><p>Eclipse</p></div>
+      </div>
+      <button class="carousel-button right" onclick="scrollCarousel('right', 'carousel2')">❯</button>
+    </div>
+
+    <h1 class="section-title">🎨 Ferramentas de Design</h1>
+    <div class="carousel-wrapper">
+      <button class="carousel-button left" onclick="scrollCarousel('left', 'carousel3')">❮</button>
+      <div id="carousel3" class="carousel">
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" style="filter: invert(1) grayscale(100%) brightness(100%);"><p>Photoshop</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><p>Figma</p></div>
+        <div class="skill-card"><img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="Canva"><p>Canva</p></div>
+      </div>
+      <button class="carousel-button right" onclick="scrollCarousel('right', 'carousel3')">❯</button>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Yuri Oliveira</p>
+</footer>
+
+<!-- JavaScript das setas -->
+<script>
+// Faz o carrossel rolar ao clicar nas setas
+function scrollCarousel(direction, carouselId) {
+  const carousel = document.getElementById(carouselId);
+  const scrollAmount = 300;
+
+  if (direction === 'left') {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+
+// Verifica se precisa mostrar ou esconder as setas
+function checkCarouselButtons() {
+  const wrappers = document.querySelectorAll('.carousel-wrapper');
+
+  wrappers.forEach(wrapper => {
+    const carousel = wrapper.querySelector('.carousel');
+    const btnLeft = wrapper.querySelector('.carousel-button.left');
+    const btnRight = wrapper.querySelector('.carousel-button.right');
+
+    if (carousel.scrollWidth > carousel.clientWidth) {
+      btnLeft.classList.remove('hidden');
+      btnRight.classList.remove('hidden');
+    } else {
+      btnLeft.classList.add('hidden');
+      btnRight.classList.add('hidden');
+    }
+  });
+}
+
+// Atualizar sempre que carregar ou redimensionar
+window.addEventListener('load', checkCarouselButtons);
+window.addEventListener('resize', checkCarouselButtons);
+</script>
+
+</body>
+</html>
