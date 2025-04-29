@@ -11,7 +11,10 @@ html, body {
   color: white;
   display: flex;
   flex-direction: column;
-  background: url('./imagens/capa inicio 3.jpg') no-repeat center center/cover;
+  background-image: url('../imagens/fundo/capa\ inicio\ 3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* opcional, para cobrir toda a tela */
   background-attachment: fixed;
   background-size: cover;
   background-color: #121212;
@@ -132,7 +135,48 @@ section h2 {
   box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
   margin: 20px auto;
   display: block;
+}/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
 }
+
+.modal-content {
+  background-color: #1f1f1f;
+  margin: auto;
+  padding: 40px 60px;
+  border: 1px solid #00ff99;
+  width: 80%;
+  max-width: 1000px; /* aumentamos o máximo para parecer um doc */
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 255, 153, 0.3);
+  color: white;
+  line-height: 1.6; /* melhora a legibilidade do texto */
+}
+
+
+.close {
+  color: #00ff99;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 /* RESPONSIVIDADE */
 

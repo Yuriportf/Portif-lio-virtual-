@@ -1,0 +1,94 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #121212;
+  overflow-x: hidden;
+}
+
+/* Seção de habilidades */
+.skills-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00ff99;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Grid das habilidades */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cartão de habilidade */
+.skill-card {
+  background: rgba(31, 31, 31, 0.85);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 150px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.5);
+}
+
+.skill-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 15px; /* Aumentando a margem inferior para maior espaçamento entre o ícone e o título */
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px; /* Adicionando margem superior para aumentar o espaçamento entre o ícone e o texto */
+}
+
+/* Frase de chamada nos cards */
+.card-hint {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #00bcd4;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .card-hint {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); }
+  to { transform: translateY(0); }
+}

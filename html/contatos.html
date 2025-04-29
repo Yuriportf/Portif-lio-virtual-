@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Portfólio</title>
-  <link rel="stylesheet" href="contatos.css">
-  <link rel="stylesheet" href="padrao.css">
+  <link rel="stylesheet" href="../css/padrao.css">
+  <link rel="stylesheet" href="../css/contatos.css">
   <!-- FontAwesome para ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -26,92 +26,85 @@
       </nav>
     </div>
   </header>
-  
 
-<main>
-  <section id="contatos" style="padding: 20px;">
+  <main>
     <section id="contatos">
       <h2 style="color: #00ff99;">🌐 Meus Contatos</h2>
       <ul class="contatos-lista">
-        <!-- Contatos Profissionais -->
         <li>
           <a href="https://www.linkedin.com/in/yuri-oliveira-aqui/" target="_blank" class="botao-contato">
             <i class="fab fa-linkedin linkedin"></i>
-            LinkedIn<br>Yuri Oliveira
+            LinkedIn
           </a>
         </li>
         <li>
           <a href="https://github.com/Yuriportf" target="_blank" class="botao-contato">
             <i class="fab fa-github github"></i>
-            GitHub<br>Yuriportf
+            GitHub
           </a>
         </li>
         <li>
           <a href="https://x.com/ysolivcod" target="_blank" class="botao-contato">
             <i class="fab fa-x-twitter twitter"></i>
-            X (Twitter)<br>@ysolivcod
+            X (Twitter)
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/_yurioliv_/" target="_blank" class="botao-contato">
             <i class="fab fa-instagram instagram"></i>
-            Instagram<br>@_yurioliv_
+            Instagram
           </a>
         </li>
-    
-        <!-- Contatos Pessoais -->
         <li>
           <a href="https://www.facebook.com/yuri.oliveira.733888" target="_blank" class="botao-contato">
             <i class="fab fa-facebook facebook"></i>
-            Facebook<br>yuri.oliveira.733888
+            Facebook
           </a>
         </li>
         <li>
           <a href="https://wa.me/5547997089153" target="_blank" class="botao-contato">
             <i class="fab fa-whatsapp whatsapp"></i>
-            WhatsApp<br>+55 47 99708-9153
+            WhatsApp
           </a>
         </li>
         <li>
           <a href="https://discord.com/users/967015974580658226" target="_blank" class="botao-contato">
             <i class="fab fa-discord discord"></i>
-            Discord<br>yuri_xxvi
+            Discord
           </a>
         </li>
         <li>
           <a href="mailto:ysoli7777@gmail.com" target="_blank" class="botao-contato">
             <i class="fas fa-envelope gmail"></i>
-            Gmail<br>ysoli7777@gmail.com
+            Gmail
           </a>
         </li>
       </ul>
     </section>
-    
-  </section>
-</main>
+  </main>
 
-<script>
-  const menuToggle = document.getElementById('mobile-menu');
-  const navbar = document.getElementById('navbar');
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
 
-  menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-  });
-</script>
-<script>
-  // Adiciona a classe 'scrolled' quando o usuário rolar a página
+    menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+
+    // Efeito de rolagem no header
     window.addEventListener('scroll', function() {
       const header = document.querySelector('header');
-      if (window.scrollY > 50) {  // Quando rolar 50px ou mais
+      if (window.scrollY > 50) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
     });
-    </script>
-<footer>
-  <p>© 2025 Yuri Oliveira</p>
-</footer>
+  </script>
+
+  <footer>
+    <p>© 2025 Yuri Oliveira</p>
+  </footer>
 
 </body>
 </html>

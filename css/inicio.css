@@ -71,7 +71,6 @@ header a.active {
   align-items: center;
   text-align: center;
   padding: 40px 20px;
-  background: url('./imagens/capa inicio 3.jpg') no-repeat center center/cover;
   position: relative;
   z-index: 1;
 }
@@ -123,66 +122,3 @@ header a.active {
   transform: scale(1.2);
 }
 
-/* RESPONSIVIDADE */
-/* Tablets até 1024px */
-@media (max-width: 1024px) {
-  .animated-title h1 {
-    font-size: 40px;
-  }
-
-  .animated-title h2 {
-    font-size: 26px;
-  }
-
-  header a {
-    font-size: 16px;
-  }
-
-  .hero {
-    padding: 30px 15px;
-  }
-}
-
-/* Celulares grandes até 768px */
-@media (max-width: 768px) {
-  .animated-title h1 {
-    font-size: 34px;
-  }
-
-  .animated-title h2 {
-    font-size: 22px;
-  }
-
-  header li {
-    margin: 0 10px;
-  }
-
-  .social-icon {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-/* Celulares pequenos até 480px */
-@media (max-width: 480px) {
-  .animated-title h1 {
-    font-size: 28px;
-  }
-
-  .animated-title h2 {
-    font-size: 18px;
-  }
-
-  header a {
-    font-size: 14px;
-  }
-
-  .social-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .hero {
-    padding: 20px 10px;
-  }
-}
