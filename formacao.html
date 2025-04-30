@@ -16,7 +16,7 @@
         <div class="menu-toggle" id="mobile-menu">&#9776;</div>
         <ul id="navbar">
           <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.htm">Sobre mim</a></li>
+          <li><a href="sobremim.htm">Sobre mim</a></li>
           <li><a href="formacao.html">Formação</a></li>
           <li><a href="habilidades.html">Habilidades</a></li>
           <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
@@ -367,59 +367,7 @@
 
 </section>
 
-<!-- JavaScript para abrir e fechar os modais -->
-<script>
-  function openModal(modalId) {
-    document.getElementById(modalId).style.display = 'block';
-  }
-
-  function closeModal(modalId) {
-    document.getElementById(modalId).style.display = 'none';
-  }
-</script>
-<script>
-  const menuToggle = document.getElementById('mobile-menu');
-  const navbar = document.getElementById('navbar');
-
-  menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-  });
-</script>
-<script>
-  // Adiciona a classe 'scrolled' quando o usuário rolar a página
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if (window.scrollY > 50) {  // Quando rolar 50px ou mais
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-    </script>
-    <script>// Função para fechar os modais ao clicar fora deles
-      function closeModalsOnOutsideClick() {
-        // Selecionar todos os modais
-        const modals = document.querySelectorAll('.modal');
-      
-        modals.forEach(modal => {
-          const modalContent = modal.querySelector('.modal-content');
-      
-          // Adicionar um evento de clique ao modal
-          modal.addEventListener('click', function(event) {
-            // Verificar se o clique foi fora do conteúdo do modal
-            if (!modalContent.contains(event.target)) {
-              modal.style.display = 'none';  // Fechar o modal
-            }
-          });
-        });
-      }
-      
-      // Chamar a função assim que a página carregar
-      window.onload = function() {
-        closeModalsOnOutsideClick();
-      };
-      
-      </script>
+<script src="script.js"></script>
 <footer>
   <p>© 2025 Yuri</p>
 </footer>

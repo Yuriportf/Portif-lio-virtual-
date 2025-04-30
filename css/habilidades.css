@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: white;
+  color: #f1f1f1;
   background-color: #121212;
   overflow-x: hidden;
 }
@@ -19,33 +19,45 @@ body {
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #00ff99;
-  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #00ffcc;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(0, 255, 153, 0.4);
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #00e6e6;
+  margin: 40px 0 25px;
   text-transform: uppercase;
 }
 
-/* Grid das habilidades */
+/* Container de categorias */
+.skills-category {
+  margin-bottom: 50px;
+}
+
+/* Grid das habilidades - agora em linha com flexbox */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  justify-items: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Cartão de habilidade */
 .skill-card {
-  background: rgba(31, 31, 31, 0.85);
+  background: rgba(20, 20, 20, 0.85);
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 12px rgba(0, 255, 153, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  width: 100%;
-  max-width: 150px;
+  width: 120px;
 }
 
 .skill-card:hover {
@@ -54,23 +66,23 @@ body {
 }
 
 .skill-card img {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
-  margin-bottom: 15px; /* Aumentando a margem inferior para maior espaçamento entre o ícone e o título */
+  margin-bottom: 12px;
 }
 
 .skill-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: #ccc;
-  margin-top: 10px; /* Adicionando margem superior para aumentar o espaçamento entre o ícone e o texto */
+  margin-top: 8px;
 }
 
 /* Frase de chamada nos cards */
 .card-hint {
   display: block;
-  margin-top: 5px;
-  font-size: 12px;
+  margin-top: 4px;
+  font-size: 11px;
   color: #00bcd4;
   opacity: 0.8;
   transition: opacity 0.3s ease;
@@ -80,7 +92,6 @@ body {
   opacity: 1;
   text-decoration: underline;
 }
-
 
 /* Animações */
 @keyframes fadeIn {

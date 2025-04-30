@@ -11,12 +11,11 @@ html, body {
   color: white;
   display: flex;
   flex-direction: column;
-  background-image: url('../imagens/fundo/capa\ inicio\ 3.jpg');
+  background-image: url('../imagens/fundo/capa inicio 3.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* opcional, para cobrir toda a tela */
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
   background-color: #121212;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -31,13 +30,13 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* ajuste conforme desejar */
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
 /* Header fixo com efeito ao rolar */
 header {
-  background-color: rgba(31, 31, 31, 0.9); /* semi-transparente */
+  background-color: rgba(31, 31, 31, 0.9);
   padding: 20px 0;
   z-index: 10;
   position: sticky;
@@ -66,6 +65,10 @@ header.scrolled {
   font-size: 30px;
   color: #00ff99;
   cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
   transition: transform 0.3s ease;
 }
 
@@ -118,7 +121,6 @@ footer {
 /* Seções */
 section {
   padding: 100px 20px 40px;
-  /* Removido o background duplicado para manter o fundo do body */
 }
 
 section h2 {
@@ -135,7 +137,9 @@ section h2 {
   box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
   margin: 20px auto;
   display: block;
-}/* MODAL */
+}
+
+/* MODAL */
 .modal {
   display: none;
   position: fixed;
@@ -155,13 +159,12 @@ section h2 {
   padding: 40px 60px;
   border: 1px solid #00ff99;
   width: 80%;
-  max-width: 1000px; /* aumentamos o máximo para parecer um doc */
+  max-width: 1000px;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0, 255, 153, 0.3);
   color: white;
-  line-height: 1.6; /* melhora a legibilidade do texto */
+  line-height: 1.6;
 }
-
 
 .close {
   color: #00ff99;
@@ -176,7 +179,6 @@ section h2 {
   color: #ffffff;
   text-decoration: none;
 }
-
 
 /* RESPONSIVIDADE */
 
@@ -204,34 +206,31 @@ section h2 {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    position: fixed;
-    top: 25px;
-    right: 30px;
-    z-index: 1001;
   }
 
   nav ul {
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(31, 31, 31, 0.95);
     position: fixed;
     top: 0;
     right: 0;
     width: 80vw;
     height: 100vh;
     padding: 30px 20px;
-    z-index: 1000;
-    /* Borda removida conforme solicitado */
-    /* border-left: 2px solid #00ff99; */
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.7);
+    background-color: rgba(18, 18, 18, 0.95); /* camada escura opcional */
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
   }
-
+  
   nav ul.show {
-    transform: translateX(0);
+    transform: translateX(0%);
+    pointer-events: auto;
+    opacity: 1;
   }
-
+  
   nav li {
     margin: 20px 0;
     width: 100%;
@@ -241,6 +240,12 @@ section h2 {
     font-size: 20px;
     width: 100%;
     padding: 10px 0;
+    background-color: transparent;
+    color: #00ff99;
+  }
+
+  nav a:hover {
+    color: white;
   }
 
   header {
