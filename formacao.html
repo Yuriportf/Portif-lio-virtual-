@@ -12,72 +12,84 @@
 
   <header>
     <div class="header-container">
+      <div class="logo">Meu Portfólio</div>
+
+      <!-- Ícone do menu hambúrguer -->
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+      <!-- Menu de navegação -->
       <nav>
-        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-        <ul id="navbar">
+        <ul id="menu">
           <li><a href="index.html">Início</a></li>
           <li><a href="sobremim.htm">Sobre mim</a></li>
           <li><a href="formacao.html">Formação</a></li>
           <li><a href="habilidades.html">Habilidades</a></li>
-          <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
           <li><a href="contatos.html">Contato</a></li>
+          <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+
+
   
-
-<section id="formacao">
-  <div class="container">
-    <h2 class="section-title">Formação</h2>
-    <div class="timeline">
-
-      <!-- Item de Formação 1 -->
-      <div class="timeline-item" onclick="openModal('modal1')">
-        <div class="timeline-content">
-          <img src="imagens/instituições/IFPE.jpeg.jpeg" alt="IFPE" class="timeline-img">
-
-          <div class="timeline-text">
-            <h3>Análise e Desenvolvimento de Sistemas (Ensino Superior, em andamento)</h3>
-            <p>Instituto Federal de Pernambuco (IFPE) - Início 2024.1 | Turno Manhã. Clique para mais detalhes.</p>
+  
+  
+  <section id="formacao">
+    <div class="container">
+      <h2 class="section-title">Formação</h2>
+      <div class="timeline">
+  
+        <!-- Item de Formação 1 -->
+        <div class="timeline-item" onclick="openModal('modal1')" style="cursor: pointer;">
+          <div class="timeline-content">
+            <img src="imagens/instituições/IFPE.jpeg.jpeg" alt="IFPE" class="timeline-img">
+  
+            <div class="timeline-text">
+              <h3>Análise e Desenvolvimento de Sistemas (Ensino Superior, em andamento)</h3>
+              <p>Instituto Federal de Pernambuco (IFPE) - Início 2024.1 | Turno Manhã. Clique para mais detalhes.</p>
+              <p style="font-weight: bold; color: #007BFF;">Clique aqui para saber mais sobre a instituição e minha trajetória nela</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Item de Formação 2 -->
-      <div class="timeline-item" onclick="openModal('modal2')">
-        <div class="timeline-content">
-          <img src="imagens/instituições/IFRS.png.png" alt="IFPE" class="timeline-img">
-
-          <div class="timeline-text">
-            <h3>Programador Web (Qualificação Profissional)</h3>
-            <p>Instituto Federal do Rio Grande do Sul (IFRS) - 13/09/2024 a 19/01/2025 | 200h. Clique para mais detalhes.</p>
+  
+        <!-- Item de Formação 2 -->
+        <div class="timeline-item" onclick="openModal('modal2')" style="cursor: pointer;">
+          <div class="timeline-content">
+            <img src="imagens/instituições/IFRS.png.png" alt="IFRS" class="timeline-img">
+  
+            <div class="timeline-text">
+              <h3>Programador Web (Qualificação Profissional)</h3>
+              <p>Instituto Federal do Rio Grande do Sul (IFRS) - 13/09/2024 a 19/01/2025 | 200h. Clique para mais detalhes.</p>
+              <p style="font-weight: bold; color: #007BFF;">Clique aqui para saber mais sobre a instituição e minha trajetória nela</p>
+            </div>
           </div>
         </div>
+  
+        <!-- Item de Formação 3 -->
+        <div class="timeline-item" onclick="openModal('modal3')" style="cursor: pointer;">
+          <div class="timeline-content">
+            <!-- Imagem à esquerda -->
+            <img src="imagens/instituições/logouececentcolor.png" alt="UECE" class="timeline-img">
+  
+            <!-- Texto da timeline -->
+            <div class="timeline-text">
+              <h3>Projeto Com Domínio Digital 4.0 (Extensão Universitária)</h3>
+              <p>Universidade Estadual do Ceará - 2025.1 | 335h. Clique para mais detalhes.</p>
+              <p style="font-weight: bold; color: #007BFF;">Clique aqui para saber mais sobre a instituição e minha trajetória nela</p>
+            </div>
+  
+            <!-- Imagem à direita -->
+            <img src="imagens/instituições/CDD.jpeg.jpeg" alt="CDD" class="timeline-img right-img">
+          </div>
+        </div>
+  
       </div>
-
-    <!-- Item de Formação 3 -->
-<div class="timeline-item" onclick="openModal('modal3')">
-  <div class="timeline-content">
-    <!-- Imagem à esquerda -->
-    
-    <img src="imagens/instituições/logouececentcolor.png" alt="UECE" class="timeline-img">
-    <!-- Texto da timeline -->
-    <div class="timeline-text">
-      <h3>Projeto Com Domínio Digital 4.0 (Extensão Universitária) </h3>
-      <p>Universidade Estadual do Ceará - 2025.1 | 335h. Clique para mais detalhes.</p>
     </div>
-
-    <!-- Imagem à direita -->
-    <img src="imagens/instituições/CDD.jpeg.jpeg" alt="CDD" class="timeline-img right-img">
-
-
-  </div>
-</div>
-
-
-    </div>
-  </div>
+  </section>
+  
 
   <!-- Modais -->
   <!-- Modal 1 -->
@@ -369,8 +381,7 @@
 
 <script src="script.js"></script>
 <footer>
-  <p>© 2025 Yuri</p>
+  <p>© 2025 Yuri. Todos os direitos reservados.</p>
 </footer>
-
 </body>
 </html>

@@ -11,100 +11,114 @@
 
   <header>
     <div class="header-container">
+      <div class="logo">Meu Portfólio</div>
+
+      <!-- Ícone do menu hambúrguer -->
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+      <!-- Menu de navegação -->
       <nav>
-        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-        <ul id="navbar">
+        <ul id="menu">
           <li><a href="index.html">Início</a></li>
           <li><a href="sobremim.htm">Sobre mim</a></li>
           <li><a href="formacao.html">Formação</a></li>
           <li><a href="habilidades.html">Habilidades</a></li>
-          <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
           <li><a href="contatos.html">Contato</a></li>
+          <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  
 
-<main class="main-content">
-  <section class="skills-section">
-    <h1 class="section-title">🛠️ Linguagens de Programação e Ferramentas</h1>
-    <div class="skills-grid">
-      <div class="skill-card" onclick="openModal('modalPython')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-        <p>Python</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
+  <main class="main-content">
+    <section class="skills-section">
+      <h1 class="section-title">🛠️ Linguagens de Programação e Ferramentas</h1>
+      <div class="skills-grid">
+        <div class="skill-card" onclick="openModal('modalPython')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <p>Python</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalHTML')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+          <p>HTML5</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalJS')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <p>JavaScript</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalJava')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <p>Java</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalMySQL')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+          <p>MySQL</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalFlask')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1) grayscale(100%) brightness(100%)" />
+          <p>Flask</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
       </div>
-      <div class="skill-card" onclick="openModal('modalHTML')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-        <p>HTML5</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-      <div class="skill-card" onclick="openModal('modalJS')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-        <p>JavaScript</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-      <div class="skill-card" onclick="openModal('modalJava')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-        <p>Java</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-      <div class="skill-card" onclick="openModal('modalMySQL')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-        <p>MySQL</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-      <div class="skill-card" onclick="openModal('modalFlask')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1) grayscale(100%) brightness(100%)" />
-        <p>Flask</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-    </div>
 
-    <h1 class="section-title">💻 IDE's e Editores</h1>
-    <div class="skills-grid">
-      <div class="skill-card" onclick="openModal('modalVSCode')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
-        <p>VS Code</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
+      <h1 class="section-title">💻 IDE's e Editores</h1>
+      <div class="skills-grid">
+        <div class="skill-card" onclick="openModal('modalVSCode')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+          <p>VS Code</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalPycharm')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" />
+          <p>PyCharm</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalIntelliJ')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" />
+          <p>IntelliJ</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalEclipse')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
+          <p>Eclipse</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalColab')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Colab" />
+          <p>Google Colab</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
       </div>
-      <div class="skill-card" onclick="openModal('modalPycharm')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" />
-        <p>PyCharm</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-      <div class="skill-card" onclick="openModal('modalIntelliJ')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" />
-        <p>IntelliJ</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-      <div class="skill-card" onclick="openModal('modalEclipse')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
-        <p>Eclipse</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-    </div>
 
-    <h1 class="section-title">🎨 Ferramentas de Design</h1>
-    <div class="skills-grid">
-      <div class="skill-card" onclick="openModal('modalPhotoshop')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" style="filter: invert(1) grayscale(100%) brightness(100%)" />
-        <p>Photoshop</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
+      <h1 class="section-title">🎨 Ferramentas de Design</h1>
+      <div class="skills-grid">
+        <div class="skill-card" onclick="openModal('modalPhotoshop')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" style="filter: invert(1) grayscale(100%) brightness(100%)" />
+          <p>Photoshop</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalFigma')">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+          <p>Figma</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
+        <div class="skill-card" onclick="openModal('modalCanva')">
+          <img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="Canva" />
+          <p>Canva</p>
+          <span class="card-hint">Clique para saber como aprendi</span>
+        </div>
       </div>
-      <div class="skill-card" onclick="openModal('modalFigma')">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
-        <p>Figma</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-      <div class="skill-card" onclick="openModal('modalCanva')">
-        <img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="Canva" />
-        <p>Canva</p>
-        <span class="card-hint">Clique para saber como aprendi</span>
-      </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
+
+
 
   </section>
 </main>
@@ -191,6 +205,15 @@
   </div>
 </div>
 
+<div id="modalColab" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalColab')">&times;</span>
+    <h3>Google Colab</h3>
+    <p>No curso de Análise e Desenvolvimento de Sistemas no campus Paulista, utilizei o Google Colab para práticas de programação em Python, principalmente em atividades envolvendo lógica de programação, análise de dados e machine learning.</p>
+  </div>
+</div>
+
+
 <div id="modalPhotoshop" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modalPhotoshop')">&times;</span>
@@ -217,8 +240,7 @@
 
 <script src="script.js"></script>
 <footer>
-  <p>© 2025 Yuri</p>
+  <p>© 2025 Yuri. Todos os direitos reservados.</p>
 </footer>
-
 </body>
 </html>

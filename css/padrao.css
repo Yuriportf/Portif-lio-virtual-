@@ -202,13 +202,21 @@ section h2 {
   }
 }
 
-/* Dispositivos médios até 768px */
 @media (max-width: 768px) {
+  
   .menu-toggle {
     display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #00ff99;
+    z-index: 1001;
+    cursor: pointer;
   }
 
   nav ul {
+    /* continua como está — escondido por padrão */
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
@@ -217,20 +225,19 @@ section h2 {
     width: 80vw;
     height: 100vh;
     padding: 30px 20px;
-    background-color: rgba(18, 18, 18, 0.95); /* camada escura opcional */
+    background-color: rgba(18, 18, 18, 0.95);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
     pointer-events: none;
     opacity: 0;
   }
-  
   nav ul.show {
     transform: translateX(0%);
     pointer-events: auto;
     opacity: 1;
   }
-  
+
   nav li {
     margin: 20px 0;
     width: 100%;
@@ -248,10 +255,6 @@ section h2 {
     color: white;
   }
 
-  header {
-    padding: 20px;
-  }
-
   footer {
     padding: 20px 10px;
     font-size: 14px;
@@ -259,28 +262,5 @@ section h2 {
 
   section h2 {
     font-size: 1.8rem;
-  }
-}
-
-/* Celulares pequenos até 480px */
-@media (max-width: 480px) {
-  nav a {
-    font-size: 18px;
-  }
-
-  nav li {
-    margin: 15px 0;
-  }
-
-  footer {
-    font-size: 13px;
-  }
-
-  section h2 {
-    font-size: 1.6rem;
-  }
-
-  #sobre-mim img {
-    max-width: 150px;
   }
 }
