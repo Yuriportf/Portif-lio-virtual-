@@ -16,29 +16,63 @@ body {
 .skills-section {
   padding: 60px 20px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Títulos */
 .section-title {
   font-size: 2.2rem;
-  color: #00ffcc;
+  color: #00ff99d0;
   margin-bottom: 40px;
   text-transform: uppercase;
   text-shadow: 1px 1px 4px rgba(0, 255, 153, 0.4);
 }
 
-.section-subtitle {
-  font-size: 1.5rem;
-  color: #00e6e6;
-  margin: 40px 0 25px;
-  text-transform: uppercase;
+
+/* Texto da introdução */
+.skills-section p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* Botões de categorias */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.category-buttons button {
+  padding: 10px 20px;
+  background-color: #00ff99;
+  border: none;
+  border-radius: 6px;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #00ff99d0;
 }
 
 /* Container de categorias */
 .skills-category {
+  display: none; /* escondido por padrão */
+  animation: fadeIn 0.5s ease, slideUp 0.5s ease;
+  margin-top: -90px; 
   margin-bottom: 50px;
+  text-align: center;
 }
 
-/* Grid das habilidades - agora em linha com flexbox */
+/* Grid das habilidades */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +88,7 @@ body {
   padding: 15px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 12px rgba(0, 255, 153, 0.2);
+  box-shadow: 0 0 12px #00ff99(0, 255, 153, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   width: 120px;
@@ -78,12 +112,12 @@ body {
   margin-top: 8px;
 }
 
-/* Frase de chamada nos cards */
+/* Dica nos cards */
 .card-hint {
   display: block;
   margin-top: 4px;
   font-size: 11px;
-  color: #00bcd4;
+  color: #00ff99;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
@@ -91,6 +125,38 @@ body {
 .skill-card:hover .card-hint {
   opacity: 1;
   text-decoration: underline;
+}
+
+/* Modais */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.3);
+  animation: fadeIn 0.4s ease;
+}
+
+.modal-content span {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+  color: #00ff99;
 }
 
 /* Animações */
@@ -102,4 +168,33 @@ body {
 @keyframes slideUp {
   from { transform: translateY(30px); }
   to { transform: translateY(0); }
+}
+.skill-card i {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.skill-card {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #00ff99;
+  border-radius: 12px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  width: 140px;
+  background-color: #292828;
+  box-shadow: 0 2px 8px rgba(23, 143, 255, 0.1);
+}
+.skill-card:hover {
+  transform: scale(1.05);
+}
+.card-hint {
+  font-size: 0.75rem;
+  color: #888;
 }

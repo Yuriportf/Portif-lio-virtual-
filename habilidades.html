@@ -6,6 +6,8 @@
   <title>Habilidades</title>
   <link rel="stylesheet" href="css/padrao.css" />
   <link rel="stylesheet" href="css/habilidades.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 </head>
 <body>
 
@@ -23,239 +25,265 @@
           <li><a href="sobremim.htm">Sobre mim</a></li>
           <li><a href="formacao.html">Formação</a></li>
           <li><a href="habilidades.html">Habilidades</a></li>
-         <li><a href="contatos.html">Contato</a></li>
+          <li><a href="contatos.html">Contato</a></li>
           <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
 
-  <main class="main-content">
-    <section class="skills-section">
-      <h1 class="section-title">🛠️ Linguagens de Programação e Ferramentas</h1>
-      <div class="skills-grid">
-        <div class="skill-card" onclick="openModal('modalPython')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-          <p>Python</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalHTML')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-          <p>HTML5</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalCSS3')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-          <p>CSS3</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>        
-        <div class="skill-card" onclick="openModal('modalJS')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-          <p>JavaScript</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalJava')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-          <p>Java</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalMySQL')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-          <p>MySQL</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalFlask')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1) grayscale(100%) brightness(100%)" />
-          <p>Flask</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-      </div>
-      
-      
+  <section class="skills-section">
+    <h1 class="section-title">Minha Jornada na Programação</h1>
+    <p>
+      Em 2019, iniciei meus estudos em programação de forma autodidata, através do curso de JavaScript do professor Gustavo Guanabara no YouTube. Esse foi meu primeiro contato com HTML, CSS e JS. Em 2024, comecei a cursar Análise e Desenvolvimento de Sistemas no IFPE - Campus Paulista, onde aprofundei meus conhecimentos em diversas linguagens e ferramentas.
+    </p>
 
-      <h1 class="section-title">💻 IDE's e Editores</h1>
-      <div class="skills-grid">
-        <div class="skill-card" onclick="openModal('modalVSCode')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
-          <p>VS Code</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalPycharm')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" />
-          <p>PyCharm</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalIntelliJ')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" />
-          <p>IntelliJ</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalEclipse')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
-          <p>Eclipse</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalColab')">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Colab" />
-          <p>Google Colab</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-      </div>
+    <!-- Botões -->
+    <div class="category-buttons">
+      <button onclick="mostrarSecao('linguagens')">Linguagens e Ferramentas</button>
+      <button onclick="mostrarSecao('ides')">IDEs</button>
+      <button onclick="mostrarSecao('design')">Design</button>
+    </div>
 
-      <h1 class="section-title">🎨 Ferramentas de Design</h1>
-      <div class="skills-grid">
-        <div class="skill-card" onclick="openModal('modalPhotoshop')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" style="filter: invert(1) grayscale(100%) brightness(100%)" />
-          <p>Photoshop</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalFigma')">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
-          <p>Figma</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-        <div class="skill-card" onclick="openModal('modalCanva')">
-          <img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="Canva" />
-          <p>Canva</p>
-          <span class="card-hint">Clique para saber como aprendi</span>
-        </div>
-      </div>
-    </section>
-  </main>
+   <!-- Seção: Linguagens -->
+<section id="linguagens" class="skills-category">
+  <div class="skills-grid">
+    <div class="skill-card" onclick="abrirModal('modalPython')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+      <p>Python</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalHTML')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+      <p>HTML5</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalCSS3')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+      <p>CSS3</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalJS')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+      <p>JavaScript</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalJava')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+      <p>Java</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalMySQL')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+      <p>MySQL</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalFlask')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter: invert(1) grayscale(100%) brightness(100%)" />
+      <p>Flask</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalTrello')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" />
+      <p>Trello</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+  </div>
+</section>
+
+<!-- Seção: IDEs -->
+<section id="ides" class="skills-category">
+  <div class="skills-grid">
+    <div class="skill-card" onclick="abrirModal('modalVSCode')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+      <p>VS Code</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalPycharm')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" />
+      <p>PyCharm</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalIntelliJ')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" />
+      <p>IntelliJ</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalEclipse')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
+      <p>Eclipse</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalColab')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" style="width:40px; height:40px;" />
+      <p>Google Colab</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+  </div>
+</section>
+
+<!-- Seção: Design -->
+<section id="design" class="skills-category">
+  <div class="skills-grid">
+    <div class="skill-card" onclick="abrirModal('modalPhotoshop')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" style="filter: invert(1) grayscale(100%) brightness(100%)" />
+      <p>Photoshop</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalFigma')">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+      <p>Figma</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+    <div class="skill-card" onclick="abrirModal('modalCanva')">
+      <img src="https://devicon-website.vercel.app/api/canva/original.svg" alt="Canva" />
+      <p>Canva</p>
+      <span class="card-hint">Clique para saber como aprendi</span>
+    </div>
+  </div>
+</section>
 
 
 
-  </section>
-</main>
-</main>
 
-<!-- Modais -->
+  <!-- Modais 🛠️ Linguagens e Ferramentas -->
 <div id="modalPython" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalPython')">&times;</span>
-    <h3>Python</h3>
-    <p>Aprendi Python no semestre 2024.2 no IFPE Campus Paulista durante a disciplina de programação.</p>
+    <p>Aprendi Python na disciplina de Introdução à Programação do IFPE (campus Paulista - PE), durante o semestre 2024.2, com o professor <a href="https://www.linkedin.com/in/rodrigoclira/" target="_blank">Rodrigo Clira</a>. Atualmente, estou reforçando meus conhecimentos no projeto Domínio Digital 4.0, sob orientação do professor <a href="https://github.com/wellingtonmoliveir" target="_blank">Weligton Oliveira</a>.</p>
+    <span onclick="fecharModal('modalPython')">Fechar</span>
   </div>
 </div>
 
 <div id="modalHTML" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalHTML')">&times;</span>
-    <h3>HTML5</h3>
-    <p>Aprendi HTML e CSS de forma autodidata com as aulas do professor Gustavo Guanabara no YouTube.</p>
-  </div>
-</div>
-
-<div id="modalJS" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modalJS')">&times;</span>
-    <h3>JavaScript</h3>
-    <p>Estudei JavaScript junto com HTML e CSS, também por conta própria através do curso do Gustavo Guanabara.</p>
+    <p>Aprendi HTML, CSS e JavaScript com o professor Gustavo Guanabara no YouTube em 2019, de forma autodidata, e desenvolvi diversos projetos ao longo desse período. Minha atividade como desenvolvedor se intensificou a partir de 2024, quando passei a me dedicar ainda mais ao desenvolvimento de projetos web.</p>
+    <span onclick="fecharModal('modalHTML')">Fechar</span>
   </div>
 </div>
 
 <div id="modalCSS3" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalCSS3')">&times;</span>
-    <h3>CSS3</h3>
-    <p>Aprendi CSS3 junto com HTML5, explorando estilos modernos e responsividade por meio de cursos online, como os do Gustavo Guanabara e projetos práticos próprios.</p>
+    <p>Aprendi HTML, CSS e JavaScript com o professor Gustavo Guanabara no YouTube em 2019, de forma autodidata, e desenvolvi diversos projetos ao longo desse período. Minha atividade como desenvolvedor se intensificou a partir de 2024, quando passei a me dedicar ainda mais ao desenvolvimento de projetos web. Com CSS3, foquei em personalização visual para páginas web, aplicando os conhecimentos em sites próprios que desenvolvi ao longo do tempo.</p>
+   <span onclick="fecharModal('modalCSS3')">Fechar</span>
   </div>
 </div>
 
+<div id="modalJS" class="modal">
+  <div class="modal-content">
+    <p>Comecei a aprender JavaScript em 2019 com o curso do professor Gustavo Guanabara e, desde então, continuei meus estudos de forma autodidata, aprofundando meus conhecimentos e aplicando-os em diversos projetos.</p>
+  <span onclick="fecharModal('modalJS')">Fechar</span>
+  </div>
+</div>
 
 <div id="modalJava" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalJava')">&times;</span>
-    <h3>Java</h3>
-    <p>Ainda estou aprendendo Java por meio de um curso no CDD, como complemento da minha formação técnica.</p>
+    <p>Comecei a estudar Java em 2024 no Projeto Com Domínio Digital 4.0, onde venho aprofundando meus conhecimentos na linguagem de forma prática e teórica.</p>
+    <span onclick="fecharModal('modalJava')">Fechar</span>
   </div>
 </div>
 
 <div id="modalMySQL" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalMySQL')">&times;</span>
-    <h3>MySQL</h3>
-    <p>Aprendi MySQL no semestre 2024.2 no IFPE Campus Paulista, onde trabalhei com banco de dados relacionais.</p>
+    <p>Aprendi fundamentos de banco de dados e MySQL na tutoria da professora <a href="https://www.instagram.com/sheylanmedeiros/" target="_blank">Sheylan Medeiros</a> no IFPE Paulista, aplicando esses conhecimentos em projetos pessoais e acadêmicos.</p>
+    <span onclick="fecharModal('modalMySQL')">Fechar</span>
   </div>
 </div>
 
 <div id="modalFlask" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalFlask')">&times;</span>
-    <h3>Flask</h3>
-    <p>Utilizei Flask no projeto final da disciplina de programação do semestre no IFPE, o que me deu base prática.</p>
+    <p>Aprendi Flask como framework web para Python ao desenvolver o projeto final da cadeira de Introdução à Programação, aplicando-o no Sistema de Estoque Prime, um pequeno sistema web.</p>
+
+    <span onclick="fecharModal('modalFlask')">Fechar</span>
   </div>
 </div>
 
+<div id="modalTrello" class="modal">
+  <div class="modal-content">
+    <p>Aprendi a usar o Trello no Projeto Com Domínio Digital 4.0 com a educadora e psicóloga <a href="https://www.instagram.com/rafaleaoo/" target="_blank">Rafaela Leão</a>, que nos apresentou a ferramenta como um instrumento para gestão de tempo e projetos, com foco em soft skills e organização de tarefas e fluxos de estudo e projetos em equipe.</p>
+    <span onclick="fecharModal('modalTrello')">Fechar</span>
+  </div>
+</div>
+
+
+<!-- Modais IDEs -->
 <div id="modalVSCode" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalVSCode')">&times;</span>
-    <h3>VS Code</h3>
-    <p>Aprendi a programar no VS Code, sendo minha IDE principal desde o início da minha jornada em programação.</p>
+    <p>Aprendi a usar o VS Code de forma autodidata e, hoje em dia, é o meu editor principal para desenvolvimento web e scripts em JavaScript, HTML, CSS.</p>
+    <span onclick="fecharModal('modalVSCode')">Fechar</span>
   </div>
 </div>
 
 <div id="modalPycharm" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalPycharm')">&times;</span>
-    <h3>PyCharm</h3>
-    <p>No CDD, percebi que o mercado usa outras IDEs, então decidi aprender o PyCharm como alternativa para Python.</p>
+    <p>Aprendi a usar o PyCharm no Projeto Com Domínio Digital 4.0, onde foi ensinado que o mercado utiliza diferentes tipos de IDEs. Hoje, uso o PyCharm principalmente para projetos em Python e frameworks como Flask.</p>
+    <span onclick="fecharModal('modalPycharm')">Fechar</span>
   </div>
 </div>
 
 <div id="modalIntelliJ" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalIntelliJ')">&times;</span>
-    <h3>IntelliJ</h3>
-    <p>Aprendi a usar o IntelliJ durante o estudo de Java no CDD, pois é muito utilizado no desenvolvimento Java profissional.</p>
+    <p>Aprendi a usar o IntelliJ por ser bem parecido com o PyCharm. Embora não tenha sido utilizado nas atividades acadêmicas do IFPE, tenho interesse em fazer projetos mobile, o que torna o IntelliJ uma ferramenta útil para esse objetivo.</p>
+    <span onclick="fecharModal('modalIntelliJ')">Fechar</span>
   </div>
 </div>
 
 <div id="modalEclipse" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalEclipse')">&times;</span>
-    <h3>Eclipse</h3>
-    <p>Aprendi a usar o Eclipse, principalmente para trabalhar com projetos Java e plugins associados.</p>
+    <p>Eclipse: experimentei no início dos estudos com Java para entender diferentes ambientes de desenvolvimento.</p>
+    <span onclick="fecharModal('modalEclipse')">Fechar</span>
   </div>
 </div>
 
 <div id="modalColab" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalColab')">&times;</span>
-    <h3>Google Colab</h3>
-    <p>No curso de Análise e Desenvolvimento de Sistemas no campus Paulista, utilizei o Google Colab para práticas de programação em Python, principalmente em atividades envolvendo lógica de programação, análise de dados e machine learning.</p>
+    <p>Google Colab: aprendi a usar com o professor <a href="https://br.linkedin.com/in/flavioroliveira" target="_blank">Flávio Rosendo da Silva Oliveira</a> na cadeira de Inteligência Artificial no IFPE Campus Paulista, durante o semestre 2024.2.</p>
+    <span onclick="fecharModal('modalColab')">Fechar</span>
   </div>
 </div>
 
 
+<!-- Modais Design -->
 <div id="modalPhotoshop" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalPhotoshop')">&times;</span>
-    <h3>Photoshop</h3>
-    <p>Aprendi Photoshop para edição de coisas simples, como fontes para colocar em projetos de programação e prototipagem de sistemas.</p>
+    <p>Aprendi Photoshop por conta própria para manipulação de artes visuais, com foco principalmente em fontes, que utilizo em meus projetos para criar layouts gráficos e edições de imagem.</p>
+    <span onclick="fecharModal('modalPhotoshop')">Fechar</span>
   </div>
 </div>
 
 <div id="modalFigma" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalFigma')">&times;</span>
-    <h3>Figma</h3>
-    <p>Aprendi Figma no período 2024.1 na cadeira de empreendedorismo, focado em prototipagem e design de interfaces.</p>
+    <p>Aprendi a usar o Figma na cadeira de Empreendedorismo no IFPE Campus Paulista com a professora <a href="https://www.instagram.com/msc_rosy/" target="_blank">Rosy</a>. Utilizo o Figma para prototipar e apresentar projetos, como startups e afins, durante o desenvolvimento de sistemas e sites.</p>
+    <span onclick="fecharModal('modalFigma')">Fechar</span>
   </div>
 </div>
 
 <div id="modalCanva" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('modalCanva')">&times;</span>
-    <h3>Canva</h3>
-    <p>Aprendi Canva de forma autodidata e uso muito para fazer apresentações em PPT e edições de imagens em geral.</p>
+    <p>O Canva é a ferramenta que mais utilizo para criar e editar apresentações, artes, imagens, banners e outros materiais gráficos. Aprendi a usá-lo de forma autônoma, explorando seus recursos na prática.</p>
+    <span onclick="fecharModal('modalCanva')">Fechar</span>
   </div>
 </div>
 
+  <!-- Scripts -->
+  <script>
+    function mostrarSecao(id) {
+      document.querySelectorAll('.skills-category').forEach(secao => {
+        secao.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function abrirModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    function fecharModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
 <script src="script.js"></script>
-<footer>
-  <p>© 2025 Yuri. Todos os direitos reservados.</p>
-</footer>
+
+
+
 </body>
 </html>
