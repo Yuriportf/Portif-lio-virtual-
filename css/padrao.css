@@ -298,3 +298,11 @@ section h2 {
   color: #00ff99;
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  footer {
+    position: relative; /* Pode ser alterado para fixed se desejar que fique sempre visível */
+    bottom: 0;
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+}
