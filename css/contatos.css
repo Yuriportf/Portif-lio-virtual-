@@ -1,0 +1,78 @@
+/* Seção de contatos */
+#contatos {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#contatos h2 {
+  color: #00ff99;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* Lista em grade com caixas clicáveis */
+.contatos-lista {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contatos-lista li {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Link ocupa toda a área da caixa */
+.contatos-lista a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Efeito hover geral */
+.contatos-lista li:hover {
+  background-color: #00ff99;
+  transform: scale(1.05);
+}
+
+.contatos-lista li:hover a {
+  color: #121212;
+}
+
+/* Ícones */
+.contatos-lista i {
+  font-size: 30px;
+}
+
+/* Cores específicas dos ícones */
+.instagram { color: #E1306C; }
+.github    { color: #ffffff; }
+.twitter   { color: #1DA1F2; }
+.linkedin  { color: #0A66C2; }
+.facebook  { color: #1877F2; }
+.whatsapp  { color: #25D366; }
+.discord   { color: #5865F2; }
+.gmail     { color: #EA4335; }
+
