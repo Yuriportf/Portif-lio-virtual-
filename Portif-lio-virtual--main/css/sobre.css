@@ -1,0 +1,333 @@
+/* ========================== */
+/* RESET GERAL                */
+/* ========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================== */
+/* CONFIGURAÇÃO DO BODY       */
+/* ========================== */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+/* ========================== */
+/* CONTEÚDO PRINCIPAL         */
+/* ========================== */
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  width: 95%;
+  border-radius: 15px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ========================== */
+/* SEÇÃO: SOBRE               */
+/* ========================== */
+.sobre-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sobre-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sobre-texto {
+  max-width: 500px;
+}
+
+.sobre-texto h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #00ff99;
+}
+
+.sobre-texto p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* INFORMAÇÕES EXTRAS */ 
+.info-lista {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-lista ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-lista li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.info-lista span {
+  font-weight: bold;
+  color: #00ff99;
+}
+
+/* ========================== */
+/* SEÇÕES COMUNS: INTERESSES, PROJETOS, EVENTOS */
+/* ========================== */
+#interesses, #projetos, #eventos {
+  padding: 10px;
+  text-align: center;
+}
+
+#interesses h2, #projetos h2, #eventos h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #00ff99;
+}
+
+/* ========================== */
+/* LISTAGEM EM COLUNA PADRONIZADA */
+/* ========================== */
+.interesses-grid,
+.card-grid,
+.eventos-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ========================== */
+/* ITENS PADRONIZADOS        */
+/* ========================== */
+.item, .card, .evento {
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  max-width: 500px;   /* Reduz a largura máxima */
+  min-height: 60px;  /* Reduz a altura mínima */
+  padding: 10px;      /* Reduz o espaçamento interno */
+  font-size: 13px;    /* Fonte um pouco menor */
+}
+
+.item:hover, .card:hover, .evento:hover {
+  transform: translateY(-3px);
+  background-color: #00ff99;
+  color: #121212;
+}
+
+/* ========================== */
+/* ESTILOS ESPECÍFICOS DE .card */
+/* ========================== */
+.card {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 255, 153, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #00ff99;
+  font-size: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* ========================== */
+/* BOTÕES DE SEÇÃO - NOVO VISUAL */
+/* ========================== */
+.section-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.section-buttons button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #00ff99, #00ccff);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 255, 153, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.section-buttons button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #00ccff, #00ff99);
+  box-shadow: 0 0 12px #00ffcc;
+  color: #000;
+}
+
+/* ========================== */
+/* ABAS - SOBRE MIM           */
+/* ========================== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #00ff99;
+  background-color: transparent;
+  color: #00ff99;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-button:hover, .tab-button.active {
+  background-color: #00ff99;
+  color: #121212;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 255, 153, 0.1);
+  color: #ffffff;
+  text-align: left;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h3 {
+  color: #00ff99;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.tab-content p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ========================== */
+/* EVENTOS - IMAGENS CIRCULARES */
+/* ========================== */
+.evento img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ff99;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.evento img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00ff99;
+}
+
+.evento p {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.evento-card {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  width: 300px;
+  min-height: 120px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 255, 153, 0.1);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.evento-card:hover {
+  transform: translateY(-3px);
+  background-color: #00ff99;
+  color: #121212;
+}
+
+
+.eventos-lado-a-lado {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.evento-bloco {
+  flex: 1;
+  min-width: 280px; /* ajuda no responsivo */
+}
+
+#sobre-mim-cards h3 {
+  margin-top: -20;
+}
