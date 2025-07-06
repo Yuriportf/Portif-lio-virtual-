@@ -8,44 +8,31 @@
   <link rel="stylesheet" href="css/formacao.css">  
 </head>
 <body>
-
-
   <header>
     <div class="header-container">
       <div class="logo">Meu Portfólio</div>
-
-      <!-- Ícone do menu hambúrguer -->
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-
-      <!-- Menu de navegação -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
       <nav>
         <ul id="menu">
           <li><a href="index.html">Início</a></li>
           <li><a href="sobremim.htm">Sobre mim</a></li>
           <li><a href="formacao.html">Formação</a></li>
           <li><a href="habilidades.html">Habilidades</a></li>
-         <li><a href="contatos.html">Contato</a></li>
+          <li><a href="contatos.html">Contato</a></li>
           <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-
-
-  
-  
-  
   <section id="formacao">
     <div class="container">
       <h2 class="section-title">Formação</h2>
       <div class="timeline">
-  
         <!-- Item de Formação 1 -->
         <div class="timeline-item" onclick="openModal('modal1')" style="cursor: pointer;">
           <div class="timeline-content">
             <img src="imagens/instituições/IFPE.jpeg.jpeg" alt="IFPE" class="timeline-img">
-  
             <div class="timeline-text">
               <h3>Análise e Desenvolvimento de Sistemas (Ensino Superior, em andamento)</h3>
               <p>Instituto Federal de Pernambuco (IFPE) - Início 2024.1 | Turno Manhã. Clique para mais detalhes.</p>
@@ -53,54 +40,55 @@
             </div>
           </div>
         </div>
-  
+
+         <div class="timeline-item" onclick="openModal('modal4')" style="cursor: pointer;">
+          <div class="timeline-content">
+            <img src="/Portif-lio-virtual--main/imagens/instituições/images.png" alt="Estácio" class="timeline-img">
+            <div class="timeline-text">
+              <h3>Bacharelado em Ciência da Computação (Ensino Superior, em andamento)</h3>
+              <p>Estácio de Sá - Início 2025.1 | EAD. Clique para mais detalhes.</p>
+              <p style="font-weight: bold; color: #007BFF;">Clique aqui para saber mais sobre a instituição e minha trajetória nela</p>
+            </div>
+          </div>
+        </div>
+
+
+             <!-- Item de Formação 3 -->
+        <div class="timeline-item" onclick="openModal('modal3')" style="cursor: pointer;">
+          <div class="timeline-content">
+            <img src="imagens/instituições/logouececentcolor.png" alt="UECE" class="timeline-img">
+            <div class="timeline-text">
+              <h3>Projeto Com Domínio Digital 4.0 (Extensão Universitária)</h3>
+              <p>Universidade Estadual do Ceará - 2025.1 | 335h. Clique para mais detalhes.</p>
+              <p style="font-weight: bold; color: #007BFF;">Clique aqui para saber mais sobre a instituição e minha trajetória nela</p>
+            </div>
+            <img src="imagens/instituições/CDD.jpeg.jpeg" alt="CDD" class="timeline-img right-img">
+          </div>
+        </div>
+
         <!-- Item de Formação 2 -->
         <div class="timeline-item" onclick="openModal('modal2')" style="cursor: pointer;">
           <div class="timeline-content">
             <img src="imagens/instituições/IFRS.png.png" alt="IFRS" class="timeline-img">
-  
             <div class="timeline-text">
               <h3>Programador Web (Qualificação Profissional)</h3>
               <p>Instituto Federal do Rio Grande do Sul (IFRS) - 13/09/2024 a 19/01/2025 | 200h. Clique para mais detalhes.</p>
               <p style="font-weight: bold; color: #007BFF;">Clique aqui para saber mais sobre a instituição e minha trajetória nela</p>
             </div>
           </div>
-        </div>
-  
-        <!-- Item de Formação 3 -->
-        <div class="timeline-item" onclick="openModal('modal3')" style="cursor: pointer;">
-          <div class="timeline-content">
-            <!-- Imagem à esquerda -->
-            <img src="imagens/instituições/logouececentcolor.png" alt="UECE" class="timeline-img">
-  
-            <!-- Texto da timeline -->
-            <div class="timeline-text">
-              <h3>Projeto Com Domínio Digital 4.0 (Extensão Universitária)</h3>
-              <p>Universidade Estadual do Ceará - 2025.1 | 335h. Clique para mais detalhes.</p>
-              <p style="font-weight: bold; color: #007BFF;">Clique aqui para saber mais sobre a instituição e minha trajetória nela</p>
-            </div>
-  
-            <!-- Imagem à direita -->
-            <img src="imagens/instituições/CDD.jpeg.jpeg" alt="CDD" class="timeline-img right-img">
-          </div>
-        </div>
-  
+        </div> 
       </div>
     </div>
   </section>
-  
 
   <!-- Modais -->
   <!-- Modal 1 -->
   <div id="modal1" class="modal">
     <div class="modal-content" style="line-height: 1.8; font-size: 16px;">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
-  
+      <span class="close" onclick="closeModal('modal1')">×</span>
       <h2 style="color: #00ff99;">🎓 Curso de Análise e Desenvolvimento de Sistemas – IFPE Campus Recife</h2>
       <p><strong>Integrando uma História Centenária com uma Jornada Pessoal</strong></p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🏛️ A História do IFPE: Educação Pública com Excelência</h3>
       <p>
         O Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco (IFPE) tem suas origens em <strong>1909</strong>, quando foi criado como 
@@ -115,9 +103,7 @@
       <p>
         O <strong>Campus Recife</strong>, sede histórica do IFPE, concentra a maior diversidade de cursos e estrutura da instituição. É símbolo da tradição e da excelência acadêmica que caracterizam a história centenária do instituto.
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🛤️ Minha Jornada: Do Campus Paulista ao Campus Recife</h3>
       <p>
         Minha trajetória acadêmica com o IFPE teve início em <strong>2024.1</strong>, quando fui aprovado no vestibular para o curso de <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> no <strong>Campus Paulista</strong>.
@@ -128,9 +114,7 @@
       <p>
         Entretanto, por motivos pessoais e familiares, precisei realizar uma <strong>transferência para o Campus Recife</strong>, a fim de me adequar a uma nova realidade de vida. Essa mudança representou muito mais do que um deslocamento físico — foi um passo importante na minha formação, agora com acesso à estrutura mais robusta do IFPE e inserido em um ambiente de pesquisa, inovação e história.
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">👨‍💻 Sobre o Curso de Análise e Desenvolvimento de Sistemas (ADS)</h3>
       <p>
         O curso superior de tecnologia em <strong>Análise e Desenvolvimento de Sistemas</strong> forma profissionais aptos a desenvolver soluções tecnológicas que envolvam a criação, o gerenciamento e a manutenção de sistemas computacionais.
@@ -138,7 +122,6 @@
       <p>
         Ao longo do curso, os estudantes aprendem desde lógica de programação até engenharia de software, segurança da informação e desenvolvimento de aplicações modernas.
       </p>
-  
       <p><strong>Áreas de estudo:</strong></p>
       <ul style="margin-left: 20px;">
         <li>✔️ Algoritmos e Estrutura de Dados</li>
@@ -149,20 +132,15 @@
         <li>✔️ Gestão de Projetos em TI</li>
         <li>✔️ Segurança da Informação</li>
       </ul>
-  
       <p><strong>Carga horária:</strong><br>
       Aproximadamente <strong>2.400 horas</strong>, distribuídas em 6 semestres (3 anos).</p>
-  
       <p>
         📘 <strong><a href="https://portal.ifpe.edu.br/wp-content/uploads/repositoriolegado/recife/documentos/matriz-curricular.pdf" 
         target="_blank" style="color: #00ff99;">Clique aqui para acessar a Matriz Curricular (PDF)</a></strong>
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🏫 IFPE Campus Recife: Tradição e Estrutura de Excelência</h3>
       <p>O <strong>Campus Recife</strong> é a maior e mais antiga unidade do IFPE, reunindo uma ampla gama de cursos técnicos, superiores e pós-graduação. Ele se destaca por:</p>
-  
       <ul style="margin-left: 20px;">
         <li>🖥️ Laboratórios modernos e atualizados</li>
         <li>📚 Biblioteca com acervo físico e digital</li>
@@ -170,13 +148,10 @@
         <li>💡 Projetos de pesquisa, extensão e inovação tecnológica</li>
         <li>👩‍🏫 Corpo docente altamente qualificado</li>
       </ul>
-  
       <p>
         O campus também é um polo de debates acadêmicos e sociais, promovendo inclusão, diversidade e acesso ao conhecimento científico.
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🔗 Links Úteis</h3>
       <ul style="margin-left: 20px;">
         <li><a href="https://portal.ifpe.edu.br/recife/cursos/superiores/tecnologos/analise-e-desenvolvimento-de-sistemas/" target="_blank" style="color: #00ff99;">🌐 Página oficial do curso - ADS Campus Recife</a></li>
@@ -185,9 +160,7 @@
         <li><a href="https://portal.ifpe.edu.br/recife" target="_blank" style="color: #00ff99;">🏛️ Instituto Federal de Pernambuco - Campus Recife</a></li>
         <li><a href="https://pt.wikipedia.org/wiki/Instituto_Federal_de_Pernambuco" target="_blank" style="color: #00ff99;">📖 História do IFPE - Wikipedia</a></li>
       </ul>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">✍️ Conclusão</h3>
       <p>
         Minha história no IFPE representa a conexão entre uma instituição centenária e um sonho pessoal. Começando no <strong>Campus Paulista</strong> e agora no <strong>Campus Recife</strong>, estou vivendo a experiência de aprender com excelência, tradição e compromisso com a educação pública de qualidade.
@@ -197,24 +170,19 @@
       </p>
     </div>
   </div>
-  
 
   <!-- Modal 2 -->
   <div id="modal2" class="modal">
     <div class="modal-content" style="line-height: 1.8; font-size: 16px;">
-      <span class="close" onclick="closeModal('modal2')">&times;</span>
-  
+      <span class="close" onclick="closeModal('modal2')">×</span>
       <h2 style="color: #00ff99;">🎓 Curso de Programador Web – IFRS</h2>
       <p><strong>Capacitação em Desenvolvimento Web para Iniciantes e Profissionais</strong></p>
-  
       <p>
         Conheci o Curso de Programador Web – IFRS enquanto estudava no IFPE de Paulista, por meio de colegas que já haviam iniciado a formação.
         Após ouvir recomendações positivas, decidi buscar um encaixe na minha rotina para também realizá-lo. Foi uma excelente escolha: além de ser uma grande oportunidade de aprendizado,
         o curso ampliou significativamente minha compreensão sobre o desenvolvimento web, reforçando meus conhecimentos técnicos e me motivando a seguir evoluindo na área.
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🏛️ Instituto Federal do Rio Grande do Sul (IFRS)</h3>
       <p>
         O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS) é uma instituição pública federal de ensino,
@@ -225,9 +193,7 @@
         a formação integral de cidadãos para enfrentar e superar desigualdades sociais, econômicas, culturais e ambientais, garantindo
         a indissociabilidade entre ensino, pesquisa e extensão, em consonância com as potencialidades e vocações territoriais.
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🏅 Reconhecimento e Qualidade</h3>
       <p>
         <strong>Índice Geral de Cursos (IGC):</strong> Em abril de 2025, o IFRS obteve conceito 4 (em uma escala de 1 a 5) no IGC,
@@ -237,15 +203,12 @@
         <strong>Ranking Internacional:</strong> O IFRS está entre as melhores instituições de ensino superior do mundo, conforme
         o ranking do <em>Center for World University Rankings (CWUR)</em>.
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">💻 Sobre o Curso de Programador Web</h3>
       <p>
         O curso de <strong>Programador Web</strong> é uma capacitação de curta duração oferecida na modalidade <strong>Educação a Distância (EaD)</strong> 
         pelo IFRS, destinada a iniciantes e profissionais que desejam aprimorar suas habilidades em desenvolvimento web.
       </p>
-  
       <p><strong>Informações Gerais:</strong></p>
       <ul style="margin-left: 20px;">
         <li>📚 Modalidade: Educação a Distância (EaD)</li>
@@ -254,9 +217,7 @@
         <li>🌐 Plataforma: Moodle IFRS</li>
         <li>🗣️ Idioma: Português</li>
       </ul>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🧠 Conteúdo Programático</h3>
       <p>O curso é estruturado em 6 módulos, abordando os seguintes temas:</p>
       <ul style="margin-left: 20px;">
@@ -268,12 +229,9 @@
         <li>✔️ Projetos de Sistemas Web: Aplicação prática dos conhecimentos adquiridos</li>
         <li>⏳ Carga Horária: 200 horas</li>
       </ul>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🎯 Público-Alvo e Requisitos</h3>
       <p><strong>Público-Alvo:</strong> Iniciantes na área de programação web e profissionais que desejam atualizar conhecimentos.</p>
-  
       <p><strong>Requisitos:</strong></p>
       <ul style="margin-left: 20px;">
         <li>🖥️ Computador ou notebook com acesso à internet e capacidade para instalação de softwares gratuitos</li>
@@ -281,22 +239,17 @@
         <li>📂 Habilidade na utilização de softwares e leitura de arquivos PDF</li>
         <li>🗣️ Compreensão de leitura e escuta em língua portuguesa</li>
       </ul>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">📜 Certificação</h3>
       <p>
         Ao concluir o curso com aproveitamento satisfatório, o aluno recebe um <strong>certificado digital</strong> emitido
         pelo IFRS, validado eletronicamente.
       </p>
-  
       <p>
         📄 <strong><a href="https://drive.google.com/file/d/1fOfRh2mDxPCbHMiqIL6Wm_9oTH8oM3uf/view?usp=sharing" 
         target="_blank" style="color: #00ff99;">Clique aqui para visualizar o certificado digital</a></strong>
       </p>
-  
       <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-  
       <h3 style="color: #00ff99;">🔗 Link para Inscrição</h3>
       <p>
         📘 <strong><a href="https://moodle.ifrs.edu.br/course/index.php?categoryid=79" 
@@ -304,98 +257,149 @@
       </p>
     </div>
   </div>
-  
-  
 
   <!-- Modal 3 -->
-<div id="modal3" class="modal">
-  <div class="modal-content" style="line-height: 1.8; font-size: 16px;">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
-    
-    <h2 style="color: #00ff99;">🚀 Projeto Com Domínio Digital 4.0 (Extensão Universitária)</h2>
-    <p><strong>Introdução:</strong> O Projeto Com Domínio Digital 4.0 é uma iniciativa voltada para a capacitação de jovens na área de tecnologia, com foco no desenvolvimento de competências técnicas e socioemocionais. Oferecido como um curso de extensão pela Universidade Estadual do Ceará (UECE), o projeto busca não apenas preparar os participantes para o mercado de trabalho tecnológico, mas também promover habilidades essenciais para o desenvolvimento pessoal e profissional.</p>
-
-    <p>Através da combinação de teoria e prática, o programa abrange tecnologias emergentes como programação em <strong>Python, Java, SQL</strong> e metodologias ágeis, além de habilidades comportamentais como resiliência, colaboração e inovação. Este relatório detalha os objetivos, estrutura, resultados e impacto do Projeto Com Domínio Digital 4.0, destacando também o papel da Universidade Estadual do Ceará (UECE), que, com sua longa trajetória educacional, oferece credibilidade e excelência na certificação do programa.</p>
-
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-
-    <h3 style="color: #00ff99;">🧑‍💻 Minha Jornada no Projeto</h3>
-    <p>Sempre tive curiosidade sobre o Projeto Com Domínio Digital 4.0. Via colegas da faculdade participando da formação e compartilhando suas experiências, o que me motivou a querer fazer parte também. Um dia, acessei a página oficial do projeto no <a href="https://www.instagram.com/cdd4.0/" target="_blank" style="color: #00ff99;">Instagram</a> e descobri que as inscrições estavam abertas.</p>
-    
-    <p>Fiquei surpreso com o processo seletivo: uma prova escrita abordando lógica, matemática e português, além de uma dinâmica de grupo. Não consegui ser aprovado inicialmente, mas entrei para a lista de espera. Felizmente, não demorou muito para ser chamado. Hoje, estou no <strong>módulo avançado</strong> e já próximo da conclusão, vivenciando uma experiência de grande impacto na minha formação pessoal e profissional.</p>
-
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-
-    <h3 style="color: #00ff99;">🎯 Objetivos e Público-Alvo</h3>
-    <p>O Projeto Com Domínio Digital 4.0 foi criado para atender à crescente demanda por profissionais qualificados na área de tecnologia da informação. Seus objetivos incluem:</p>
-    <ul style="margin-left: 20px;">
-      <li><strong>Desenvolver competências técnicas (hard skills):</strong> Através do ensino de linguagens de programação como Python, Java e SQL, além de metodologias ágeis de desenvolvimento de software.</li>
-      <li><strong>Fomentar habilidades socioemocionais (soft skills):</strong> Como resiliência, colaboração, criatividade e inovação, fundamentais para o sucesso no ambiente de trabalho moderno.</li>
-      <li><strong>Facilitar a inserção dos participantes no mercado de trabalho:</strong> Através de uma abordagem prática, com desafios reais e experiências de desenvolvimento tecnológico.</li>
-      <li><strong>Promover equidade de gênero:</strong> O projeto busca incentivar a participação feminina em um setor historicamente dominado por homens, ampliando a diversidade.</li>
-    </ul>
-    <p>O programa é voltado para jovens de <strong>18 a 29 anos</strong>, com foco na região metropolitana de Recife, Pernambuco. No entanto, com a expansão da oferta de cursos e parcerias, a possibilidade de uma oferta em Fortaleza, Ceará, também foi mencionada, destacando o potencial de colaboração entre diferentes campi e regiões.</p>
-
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-
-    <h3 style="color: #00ff99;">📚 Estrutura e Metodologia</h3>
-    <p>O Com Domínio Digital 4.0 é oferecido de maneira presencial, com uma carga horária total de <strong>335 horas</strong>, distribuídas ao longo de <strong>cinco meses</strong>. A estrutura do curso é dividida em dois módulos principais:</p>
-    <ul style="margin-left: 20px;">
-      <li><strong>Módulo Básico:</strong> Focado em conceitos fundamentais, como lógica de programação, algoritmos, e introdução a metodologias ágeis.</li>
-      <li><strong>Módulo Avançado:</strong> Aprofunda os conhecimentos adquiridos no módulo anterior, abordando tópicos como desenvolvimento de software, gestão ágil de projetos e desenvolvimento de soluções práticas em ambientes reais.</li>
-    </ul>
-
-    <p>A metodologia utilizada é prática e interativa, combinando aulas teóricas com <strong>desafios reais de tecnologia</strong>. Os participantes trabalham em projetos concretos, que são desenvolvidos em parceria com empresas de tecnologia, como a <strong>Softex</strong> no <strong>Porto Digital</strong>, um dos maiores polos tecnológicos do Brasil. Este tipo de abordagem permite que os alunos se familiarizem com o mercado de trabalho e adquiram experiência prática enquanto ainda estão em formação.</p>
-
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-
-    <h3 style="color: #00ff99;">📊 Resultados e Impacto</h3>
-    <p>Em 2023, o Projeto Com Domínio Digital 4.0 alcançou resultados bastante expressivos, evidenciando seu sucesso na preparação de jovens para o mercado de trabalho. Os resultados mais relevantes incluem:</p>
-    <ul style="margin-left: 20px;">
-      <li><strong>Taxa de Inserção no Mercado de Trabalho:</strong> 70% dos participantes conseguiram uma colocação no mercado de trabalho ou prosseguiram com seus estudos em universidades.</li>
-      <li><strong>Taxa de Evasão:</strong> A taxa de evasão foi de apenas <strong>8%</strong>, um indicativo de alta retenção e envolvimento dos alunos ao longo do curso.</li>
-      <li><strong>Participação Feminina:</strong> Aproximadamente <strong>40% dos participantes</strong> eram mulheres, superando a média da indústria de tecnologia, o que contribui para a maior diversidade no setor.</li>
-      <li><strong>Impacto Econômico:</strong> <strong>77% dos concluintes</strong> relataram um aumento significativo na renda familiar após a conclusão do curso.</li>
-      <li><strong>Certificação:</strong> <strong>92% dos participantes</strong> receberam o certificado de conclusão do curso de extensão da Universidade Estadual do Ceará (UECE).</li>
-    </ul>
-
-    <p>Esses dados comprovam a eficácia do projeto em capacitar os participantes e prepará-los para as exigências do mercado tecnológico, enquanto contribuem para a inclusão social e diversidade no setor.</p>
-
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-
-    <h3 style="color: #00ff99;">🏛️ Universidade Estadual do Ceará (UECE)</h3>
-    <p>A Universidade Estadual do Ceará (UECE) foi fundada em <strong>1975</strong>, em Fortaleza, e é uma das principais instituições de ensino superior do Nordeste brasileiro. A missão da UECE é oferecer <strong>educação de qualidade</strong>, promover a <strong>pesquisa científica</strong> e engajar-se em <strong>atividades de extensão</strong> que beneficiem a comunidade.</p>
-    <p>Com um forte compromisso com a educação pública, gratuita e de qualidade, a UECE oferece cursos de <strong>graduação, pós-graduação</strong> e programas de <strong>extensão</strong>, atendendo milhares de estudantes em diferentes áreas do conhecimento. A universidade é reconhecida pelo seu desempenho acadêmico, com <strong>nota 4</strong> no Índice Geral de Cursos (IGC) do Ministério da Educação (MEC), e se destaca pela qualidade de sua infraestrutura, composta por laboratórios, bibliotecas e áreas de lazer para os alunos.</p>
-
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-
-    <h3 style="color: #00ff99;">🔗 Links e Referências</h3>
-    <ul style="margin-left: 20px;">
-      <li><a href="https://www.uece.br" target="_blank" style="color: #00ff99;">Universidade Estadual do Ceará - UECE</a></li>
-      <li><a href="https://institutoalianca.org.br" target="_blank" style="color: #00ff99;">Instituto Aliança</a></li>
-      <li><a href="https://www.portodigital.org.br" target="_blank" style="color: #00ff99;">Porto Digital - Softex Pernambuco</a></li>
-      <li><a href="https://www.uece.br/proex" target="_blank" style="color: #00ff99;">Programa de Extensão da UECE</a></li>
-      <li><a href="https://www.instagram.com/cdd4.0/" target="_blank" style="color: #00ff99;">Instagram Oficial do Projeto</a></li>
-    </ul>
-
-    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
-
-    <h3 style="color: #00ff99;">✍️ Conclusão</h3>
-    <p>O Projeto Com Domínio Digital 4.0 é uma iniciativa transformadora que combina a excelência acadêmica da Universidade Estadual do Ceará (UECE) com as necessidades do mercado de trabalho tecnológico. O programa capacita jovens em <strong>hard skills</strong> e <strong>soft skills</strong>, preparando-os para desafios reais em um ambiente tecnológico em constante evolução.</p>
-
-    <p>A UECE, com sua expertise e reconhecimento, desempenha um papel fundamental na realização desse projeto, fornecendo a base acadêmica e a credibilidade necessárias para garantir a eficácia da formação oferecida.</p>
-
-    <p>Ao final do curso, os participantes estão mais preparados para ingressar no mercado de trabalho, seja em empresas de tecnologia ou em novos projetos empreendedores, contribuindo para o desenvolvimento econômico e social do Brasil.</p>
+  <div id="modal3" class="modal">
+    <div class="modal-content" style="line-height: 1.8; font-size: 16px;">
+      <span class="close" onclick="closeModal('modal3')">×</span>
+      <h2 style="color: #00ff99;">🚀 Projeto Com Domínio Digital 4.0 (Extensão Universitária)</h2>
+      <p><strong>Introdução:</strong> O Projeto Com Domínio Digital 4.0 é uma iniciativa voltada para a capacitação de jovens na área de tecnologia, com foco no desenvolvimento de competências técnicas e socioemocionais. Oferecido como um curso de extensão pela Universidade Estadual do Ceará (UECE), o projeto busca não apenas preparar os participantes para o mercado de trabalho tecnológico, mas também promover habilidades essenciais para o desenvolvimento pessoal e profissional.</p>
+      <p>Através da combinação de teoria e prática, o programa abrange tecnologias emergentes como programação em <strong>Python, Java, SQL</strong> e metodologias ágeis, além de habilidades comportamentais como resiliência, colaboração e inovação. Este relatório detalha os objetivos, estrutura, resultados e impacto do Projeto Com Domínio Digital 4.0, destacando também o papel da Universidade Estadual do Ceará (UECE), que, com sua longa trajetória educacional, oferece credibilidade e excelência na certificação do programa.</p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🧑‍💻 Minha Jornada no Projeto</h3>
+      <p>Sempre tive curiosidade sobre o Projeto Com Domínio Digital 4.0. Via colegas da faculdade participando da formação e compartilhando suas experiências, o que me motivou a querer fazer parte também. Um dia, acessei a página oficial do projeto no <a href="https://www.instagram.com/cdd4.0/" target="_blank" style="color: #00ff99;">Instagram</a> e descobri que as inscrições estavam abertas.</p>
+      <p>Fiquei surpreso com o processo seletivo: uma prova escrita abordando lógica, matemática e português, além de uma dinâmica de grupo. Não consegui ser aprovado inicialmente, mas entrei para a lista de espera. Felizmente, não demorou muito para ser chamado. Hoje, estou no <strong>módulo avançado</strong> e já próximo da conclusão, vivenciando uma experiência de grande impacto na minha formação pessoal e profissional.</p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🎯 Objetivos e Público-Alvo</h3>
+      <p>O Projeto Com Domínio Digital 4.0 foi criado para atender à crescente demanda por profissionais qualificados na área de tecnologia da informação. Seus objetivos incluem:</p>
+      <ul style="margin-left: 20px;">
+        <li><strong>Desenvolver competências técnicas (hard skills):</strong> Através do ensino de linguagens de programação como Python, Java e SQL, além de metodologias ágeis de desenvolvimento de software.</li>
+        <li><strong>Fomentar habilidades socioemocionais (soft skills):</strong> Como resiliência, colaboração, criatividade e inovação, fundamentais para o sucesso no ambiente de trabalho moderno.</li>
+        <li><strong>Facilitar a inserção dos participantes no mercado de trabalho:</strong> Através de uma abordagem prática, com desafios reais e experiências de desenvolvimento tecnológico.</li>
+        <li><strong>Promover equidade de gênero:</strong> O projeto busca incentivar a participação feminina em um setor historicamente dominado por homens, ampliando a diversidade.</li>
+      </ul>
+      <p>O programa é voltado para jovens de <strong>18 a 29 anos</strong>, com foco na região metropolitana de Recife, Pernambuco. No entanto, com a expansão da oferta de cursos e parcerias, a possibilidade de uma oferta em Fortaleza, Ceará, também foi mencionada, destacando o potencial de colaboração entre diferentes campi e regiões.</p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">📚 Estrutura e Metodologia</h3>
+      <p>O Com Domínio Digital 4.0 é oferecido de maneira presencial, com uma carga horária total de <strong>335 horas</strong>, distribuídas ao longo de <strong>cinco meses</strong>. A estrutura do curso é dividida em dois módulos principais:</p>
+      <ul style="margin-left: 20px;">
+        <li><strong>Módulo Básico:</strong> Focado em conceitos fundamentais, como lógica de programação, algoritmos, e introdução a metodologias ágeis.</li>
+        <li><strong>Módulo Avançado:</strong> Aprofunda os conhecimentos adquiridos no módulo anterior, abordando tópicos como desenvolvimento de software, gestão ágil de projetos e desenvolvimento de soluções práticas em ambientes reais.</li>
+      </ul>
+      <p>A metodologia utilizada é prática e interativa, combinando aulas teóricas com <strong>desafios reais de tecnologia</strong>. Os participantes trabalham em projetos concretos, que são desenvolvidos em parceria com empresas de tecnologia, como a <strong>Softex</strong> no <strong>Porto Digital</strong>, um dos maiores polos tecnológicos do Brasil. Este tipo de abordagem permite que os alunos se familiarizem com o mercado de trabalho e adquiram experiência prática enquanto ainda estão em formação.</p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">📊 Resultados e Impacto</h3>
+      <p>Em 2023, o Projeto Com Domínio Digital 4.0 alcançou resultados bastante expressivos, evidenciando seu sucesso na preparação de jovens para o mercado de trabalho. Os resultados mais relevantes incluem:</p>
+      <ul style="margin-left: 20px;">
+        <li><strong>Taxa de Inserção no Mercado de Trabalho:</strong> 70% dos participantes conseguiram uma colocação no mercado de trabalho ou prosseguiram com seus estudos em universidades.</li>
+        <li><strong>Taxa de Evasão:</strong> A taxa de evasão foi de apenas <strong>8%</strong>, um indicativo de alta retenção e envolvimento dos alunos ao longo do curso.</li>
+        <li><strong>Participação Feminina:</strong> Aproximadamente <strong>40% dos participantes</strong> eram mulheres, superando a média da indústria de tecnologia, o que contribui para a maior diversidade no setor.</li>
+        <li><strong>Impacto Econômico:</strong> <strong>77% dos concluintes</strong> relataram um aumento significativo na renda familiar após a conclusão do curso.</li>
+        <li><strong>Certificação:</strong> <strong>92% dos participantes</strong> receberam o certificado de conclusão do curso de extensão da Universidade Estadual do Ceará (UECE).</li>
+      </ul>
+      <p>Esses dados comprovam a eficácia do projeto em capacitar os participantes e prepará-los para as exigências do mercado tecnológico, enquanto contribuem para a inclusão social e diversidade no setor.</p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🏛️ Universidade Estadual do Ceará (UECE)</h3>
+      <p>A Universidade Estadual do Ceará (UECE) foi fundada em <strong>1975</strong>, em Fortaleza, e é uma das principais instituições de ensino superior do Nordeste brasileiro. A missão da UECE é oferecer <strong>educação de qualidade</strong>, promover a <strong>pesquisa científica</strong> e engajar-se em <strong>atividades de extensão</strong> que beneficiem a comunidade.</p>
+      <p>Com um forte compromisso com a educação pública, gratuita e de qualidade, a UECE oferece cursos de <strong>graduação, pós-graduação</strong> e programas de <strong>extensão</strong>, atendendo milhares de estudantes em diferentes áreas do conhecimento. A universidade é reconhecida pelo seu desempenho acadêmico, com <strong>nota 4</strong> no Índice Geral de Cursos (IGC) do Ministério da Educação (MEC), e se destaca pela qualidade de sua infraestrutura, composta por laboratórios, bibliotecas e áreas de lazer para os alunos.</p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🔗 Links e Referências</h3>
+      <ul style="margin-left: 20px;">
+        <li><a href="https://www.uece.br" target="_blank" style="color: #00ff99;">Universidade Estadual do Ceará - UECE</a></li>
+        <li><a href="https://institutoalianca.org.br" target="_blank" style="color: #00ff99;">Instituto Aliança</a></li>
+        <li><a href="https://www.portodigital.org.br" target="_blank" style="color: #00ff99;">Porto Digital - Softex Pernambuco</a></li>
+        <li><a href="https://www.uece.br/proex" target="_blank" style="color: #00ff99;">Programa de Extensão da UECE</a></li>
+        <li><a href="https://www.instagram.com/cdd4.0/" target="_blank" style="color: #00ff99;">Instagram Oficial do Projeto</a></li>
+      </ul>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">✍️ Conclusão</h3>
+      <p>O Projeto Com Domínio Digital 4.0 é uma iniciativa transformadora que combina a excelência acadêmica da Universidade Estadual do Ceará (UECE) com as necessidades do mercado de trabalho tecnológico. O programa capacita jovens em <strong>hard skills</strong> e <strong>soft skills</strong>, preparando-os para desafios reais em um ambiente tecnológico em constante evolução.</p>
+      <p>A UECE, com sua expertise e reconhecimento, desempenha um papel fundamental na realização desse projeto, fornecendo a base acadêmica e a credibilidade necessárias para garantir a eficácia da formação oferecida.</p>
+      <p>Ao final do curso, os participantes estão mais preparados para ingressar no mercado de trabalho, seja em empresas de tecnologia ou em novos projetos empreendedores, contribuindo para o desenvolvimento econômico e social do Brasil.</p>
+    </div>
   </div>
-</div>
 
-  
+  <!-- Modal 4 - Estácio -->
+  <div id="modal4" class="modal">
+    <div class="modal-content" style="line-height: 1.8; font-size: 16px;">
+      <span class="close" onclick="closeModal('modal4')">×</span>
+      <h2 style="color: #00ff99;">🎓 Bacharelado em Ciência da Computação – Estácio de Sá</h2>
+      <p><strong>Construindo uma Base Sólida para uma Carreira Global em Tecnologia</strong></p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🏛️ Sobre a Estácio de Sá</h3>
+      <p>
+        A Universidade Estácio de Sá, fundada em 1970 no Rio de Janeiro, é uma das maiores e mais reconhecidas instituições de ensino superior do Brasil. Com uma forte presença nacional, a Estácio oferece cursos de graduação, pós-graduação e extensão, presenciais e a distância (EAD), com foco na qualidade acadêmica e na preparação para o mercado de trabalho.
+      </p>
+      <p>
+        A instituição é conhecida por sua infraestrutura moderna, corpo docente qualificado e pela flexibilidade do modelo EAD, que permite aos alunos conciliarem estudos com outras responsabilidades. A Estácio também investe em parcerias com empresas e programas de empregabilidade, conectando estudantes ao mercado de tecnologia e outras áreas.
+      </p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🛤️ Minha Jornada na Estácio</h3>
+      <p>
+        Minha decisão de ingressar no curso de <strong>Bacharelado em Ciência da Computação</strong> na Estácio de Sá, iniciado em <strong>2025.1</strong> na modalidade EAD, foi motivada por um objetivo claro: construir uma base acadêmica sólida que me permita acessar oportunidades internacionais, incluindo programas de mestrado no exterior. 
+      </p>
+      <p>
+        Durante minha formação em Análise e Desenvolvimento de Sistemas no IFPE, percebi que um curso superior de tecnologia, embora extremamente prático e alinhado ao mercado, não é reconhecido em muitos países como elegível para admissão direta em programas de mestrado. Para alcançar meu objetivo de continuar meus estudos no exterior, optei pelo bacharelado em Ciência da Computação, que oferece uma formação mais ampla e reconhecida globalmente.
+      </p>
+      <p>
+        A modalidade EAD da Estácio foi ideal para minha rotina, permitindo que eu conciliasse os estudos com outras formações e projetos pessoais. A flexibilidade do curso, aliada à qualidade do ensino, tem sido fundamental para minha evolução como profissional de tecnologia.
+      </p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">👨‍💻 Sobre o Curso de Ciência da Computação</h3>
+      <p>
+        O curso de <strong>Bacharelado em Ciência da Computação</strong> da Estácio forma profissionais capacitados para atuar em diversas áreas da tecnologia, como desenvolvimento de software, inteligência artificial, ciência de dados, segurança cibernética e pesquisa acadêmica. Com uma abordagem teórica e prática, o curso prepara os alunos para os desafios do mercado global.
+      </p>
+      <p><strong>Áreas de estudo:</strong></p>
+      <ul style="margin-left: 20px;">
+        <li>✔️ Algoritmos e Estruturas de Dados</li>
+        <li>✔️ Inteligência Artificial e Machine Learning</li>
+        <li>✔️ Sistemas Operacionais</li>
+        <li>✔️ Banco de Dados Avançado</li>
+        <li>✔️ Redes de Computadores</li>
+        <li>✔️ Engenharia de Software</li>
+        <li>✔️ Computação Gráfica</li>
+        <li>✔️ Segurança da Informação</li>
+      </ul>
+      <p><strong>Carga horária:</strong><br>
+      Aproximadamente <strong>3.200 horas</strong>, distribuídas em 8 semestres (4 anos).</p>
+      <p>
+        📘 <strong><a href="https://www.estacio.br/cursos/graduacao/ciencia-da-computacao" 
+        target="_blank" style="color: #00ff99;">Clique aqui para acessar a página oficial do curso</a></strong>
+      </p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🏫 Estrutura e Qualidade da Estácio</h3>
+      <p>A Estácio de Sá se destaca por:</p>
+      <ul style="margin-left: 20px;">
+        <li>🖥️ Plataforma EAD robusta com acesso a aulas gravadas e ao vivo</li>
+        <li>📚 Material didático digital atualizado</li>
+        <li>🌐 Suporte técnico e acadêmico para alunos EAD</li>
+        <li>💡 Parcerias com empresas de tecnologia para estágios e empregabilidade</li>
+        <li>👩‍🏫 Corpo docente com experiência prática e acadêmica</li>
+      </ul>
+      <p>
+        A instituição possui conceito 4 no Índice Geral de Cursos (IGC) do Ministério da Educação (MEC), refletindo sua qualidade acadêmica e compromisso com a formação de profissionais qualificados.
+      </p>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">🔗 Links Úteis</h3>
+      <ul style="margin-left: 20px;">
+        <li><a href="https://www.estacio.br" target="_blank" style="color: #00ff99;">🌐 Página oficial da Estácio de Sá</a></li>
+        <li><a href="https://www.estacio.br/cursos/graduacao/ciencia-da-computacao" target="_blank" style="color: #00ff99;">📘 Curso de Ciência da Computação - Estácio</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Universidade_Est%C3%A1cio_de_S%C3%A1" target="_blank" style="color: #00ff99;">📖 História da Estácio - Wikipedia</a></li>
+      </ul>
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #444;">
+      <h3 style="color: #00ff99;">✍️ Conclusão</h3>
+      <p>
+        O curso de Bacharelado em Ciência da Computação na Estácio de Sá é um passo estratégico na minha trajetória acadêmica e profissional. A escolha pela Estácio reflete meu objetivo de obter um diploma reconhecido internacionalmente, que me permita acessar programas de mestrado no exterior e construir uma carreira sólida no campo da tecnologia.
+      </p>
+      <p>
+        Com a flexibilidade do modelo EAD e a qualidade acadêmica da instituição, estou confiante de que essa formação complementará meu aprendizado no IFPE e me preparará para os desafios do mercado global de tecnologia.
+      </p>
+    </div>
+  </div>
 
-</section>
-
-<script src="script.js"></script>
-<footer>
-  <p>© 2025 Yuri. Todos os direitos reservados.</p>
-</footer>
+  <script src="script.js"></script>
+  <footer>
+    <p>© 2025 Yuri. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
