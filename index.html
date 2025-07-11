@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">Meu Portfólio</div>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Alternar menu de navegação">☰</div>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobremim.htm">Sobre mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="habilidades.html">Habilidades</a></li>
+          <li><a href="contatos.html">Contato</a></li>
+          <li><a href="https://drive.google.com/file/d/12DIcGROib1FiwWj7nUsNwoTvGrnr0rWW/view?usp=sharing">Currículo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="animated-title">
+        <h1>Yuri Santos de Oliveira</h1>
+        <h2>Eu sou <span id="changing-word">Desenvolvedor</span><span class="cursor">|</span></h2>
+      </div>
+    </section>
+  </main>
+
+  <div id="exemplo-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <p>Este é um modal de exemplo.</p>
+      <button onclick="closeModal('exemplo-modal')">Fechar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Yuri. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
